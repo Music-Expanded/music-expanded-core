@@ -1,0 +1,9 @@
+# Ignore dotnet files
+obj
+
+# Ignore built files
+Assemblies
+
+# Ignore editor files
+.vscode
+.vs

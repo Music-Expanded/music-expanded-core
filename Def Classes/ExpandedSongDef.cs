@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +10,6 @@ namespace MusicExpanded.Def_Classes
 {
     public class ExpandedSongDef : SongDef
     {
+        public List<BiomeDef> allowedBiomes; 
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Verse;
 
-namespace MusicExpanded.Def_Classes
+namespace MusicExpanded.Def
 {
     public class ExpandedSongDef : SongDef
     {

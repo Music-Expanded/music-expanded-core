@@ -7,3 +7,8 @@ Assemblies
 # Ignore editor files
 .vscode
 .vs
+*.sln
+
+# Ignore audio files
+# Ideally, we'd keep these out of the repository, and fetch them with some trickery for releases.
+*.mp3

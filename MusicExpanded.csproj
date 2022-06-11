@@ -3,7 +3,12 @@
 	<PropertyGroup>
 		<TargetFramework>net472</TargetFramework>
 		<RootNamespace>MusicExpanded</RootNamespace>
+		<AssemblyName>MusicExpanded</AssemblyName>
 		<OutputPath>Assemblies</OutputPath>
+		<OutputType>Library</OutputType>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>

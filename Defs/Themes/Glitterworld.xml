@@ -6,20 +6,65 @@ Possible defname format: ME_Theme_Title?
 -->
 <Defs>
     <MusicExpanded.TrackDef>
+        <!-- This might need to be a SoundDef to actually work with what the game expects -->
         <label>Glitterworld - Scenario Begin</label>
         <defName>ME_Glitterworld_ScenarioBegin</defName>
         <clipPath>MusicExpanded/Glitterworld/Glitterworld_Scenario_Begin</clipPath>
     </MusicExpanded.TrackDef>
+
     <MusicExpanded.TrackDef>
         <label>Glitterword - Aurora Borealis</label>
         <defName>ME_Glitterworld_AuroraBorealis</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Aurora Borealis</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Glitterword - Blue Ruins</label>
+        <defName>ME_Glitterworld_BlueRuins</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Blue Ruins</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Glitterword - Chrome Gestalt</label>
+        <defName>ME_Glitterworld_ChromeGestalt</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Chrome Gestalt</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Glitterword - Circles</label>
+        <defName>ME_Glitterworld_Circles</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Circles</clipPath>
+    </MusicExpanded.TrackDef>
+    <!-- Skipped credits, for now -->
+    <MusicExpanded.TrackDef>
+        <label>Glitterword - Defense</label>
+        <defName>ME_Glitterworld_Defense</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Defense</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Glitterword - Everything, Anything</label>
+        <defName>ME_Glitterworld_EverythingAnything</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Everything, Anything</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Glitterword - Follow Me</label>
+        <defName>ME_Glitterworld_FollowMe</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Follow Me</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Glitterword - Glass</label>
+        <defName>ME_Glitterworld_Glass</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Glass</clipPath>
     </MusicExpanded.TrackDef>
 
     <MusicExpanded.ThemeDef>
         <defName>ME_Glitterworld</defName>
         <tracks>
             <li>ME_Glitterworld_AuroraBorealis</li>
+            <li>ME_Glitterworld_BlueRuins</li>
+            <li>ME_Glitterworld_ChromeGestalt</li>
+            <li>ME_Glitterworld_Circles</li>
+            <li>ME_Glitterworld_Defense</li>
+            <li>ME_Glitterworld_EverythingAnything</li>
+            <li>ME_Glitterworld_FollowMe</li>
+            <li>ME_Glitterworld_Glass</li>
         </tracks>
     </MusicExpanded.ThemeDef>
 </Defs>

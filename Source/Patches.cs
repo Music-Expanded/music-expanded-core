@@ -16,10 +16,9 @@ namespace MusicExpanded
                 // TODO: Get current theme.
                 ThemeDef theme = DefDatabase<ThemeDef>.GetNamed("ME_Glitterworld");
                 IEnumerable<TrackDef> tracks = theme.tracks.Where(track => Utilities.AppropriateNow(track));
-                // TODO: Handle multiple valid tracks
-                __result = tracks.First() as SongDef;
+                __result = tracks.RandomElementByWeight((TrackDef s) => s.commonality) as SongDef;
                 Log.Warning("Playing " + __result);
-                return true;
+                return false;
             }
         }
     }

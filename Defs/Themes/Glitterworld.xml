@@ -1,0 +1,14 @@
+<!-- 
+We might want to organize the tracks in folders that make sense 
+Maybe /MusicExpanded/Glitterworld/Scenario_Bugin.mp3 instead?
+
+Possible defname format: MusicExpanded_Theme_Title?
+-->
+<Defs>
+    <MusicExpanded.TrackDef>
+        <label>Glitterworld Scenario Begin</label>
+        <defName>MusicExpanded_Glitterworld_ScenarioBegin</defName>
+        <clipPath>MusicExpanded/Glitterworld/Glitterworld_Scenario_Begin</clipPath>
+        <volume>1</volume>
+    </MusicExpanded.TrackDef>
+</Defs>

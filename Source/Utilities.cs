@@ -11,9 +11,16 @@ namespace MusicExpanded
         {
             // Figure out if a track is appropriate right now.
             // Map map = Find.AnyPlayerHomeMap ?? Find.CurrentMap;
-            if (lastPlayed == track) return false;
+            if (
+                lastPlayed == track
+                || track.playOnCredits
+            ) return false;
             lastPlayed = track;
             return true;
+        }
+        public static ThemeDef GetTheme()
+        {
+            return DefDatabase<ThemeDef>.GetNamed("ME_Glitterworld");
         }
     }
 }

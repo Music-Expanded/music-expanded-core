@@ -8,17 +8,45 @@ namespace MusicExpanded
 {
     public class Patches
     {
+        private static bool forceNextSong = false;
         [HarmonyPatch(typeof(MusicManagerPlay), "ChooseNextSong")]
         class ChooseNextSong
         {
             static bool Prefix(MusicManagerPlay __instance, ref SongDef __result)
             {
-                // TODO: Get current theme.
-                ThemeDef theme = DefDatabase<ThemeDef>.GetNamed("ME_Glitterworld");
+                if (forceNextSong)
+                {
+                    forceNextSong = false;
+                    return true;
+                }
+                ThemeDef theme = Utilities.GetTheme();
                 IEnumerable<TrackDef> tracks = theme.tracks.Where(track => Utilities.AppropriateNow(track));
                 __result = tracks.RandomElementByWeight((TrackDef s) => s.commonality) as SongDef;
-                Log.Warning("Playing " + __result);
                 return false;
+            }
+        }
+        [HarmonyPatch(typeof(MusicManagerPlay), "ForceStartSong")]
+        class ForceStartSong
+        {
+            static bool Prefix(MusicManagerPlay __instance, SongDef song, bool ignorePrefsVolume)
+            {
+                forceNextSong = true;
+                return true;
+            }
+        }
+        [HarmonyPatch(typeof(Screen_Credits), "EndCreditsSong", MethodType.Getter)]
+        class EndCreditsSong
+        {
+            static bool Prefix(ref SongDef __result)
+            {
+                // This is way too much on one line, maybe this should be cleaned up a bit?
+                IEnumerable<TrackDef> creditTracks = Utilities.GetTheme().tracks.Where(track => track.playOnCredits);
+                if (creditTracks.Any())
+                {
+                    __result = creditTracks.RandomElementByWeight((TrackDef s) => s.commonality) as SongDef;
+                    return false;
+                }
+                return true;
             }
         }
     }

@@ -32,7 +32,12 @@ Possible defname format: ME_Theme_Title?
         <defName>ME_Glitterworld_Circles</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Circles</clipPath>
     </MusicExpanded.TrackDef>
-    <!-- Skipped credits, for now -->
+    <MusicExpanded.TrackDef>
+        <label>Glitterword - Credits</label>
+        <defName>ME_Glitterworld_Credits</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Credits</clipPath>
+        <playOnCredits>true</playOnCredits>
+    </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Glitterword - Defense</label>
         <defName>ME_Glitterworld_Defense</defName>
@@ -61,6 +66,7 @@ Possible defname format: ME_Theme_Title?
             <li>ME_Glitterworld_BlueRuins</li>
             <li>ME_Glitterworld_ChromeGestalt</li>
             <li>ME_Glitterworld_Circles</li>
+            <li>ME_Glitterworld_Credits</li>
             <li>ME_Glitterworld_Defense</li>
             <li>ME_Glitterworld_EverythingAnything</li>
             <li>ME_Glitterworld_FollowMe</li>

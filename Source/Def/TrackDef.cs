@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Verse;
 
-namespace MusicExpanded.Def
+namespace MusicExpanded
 {
-    public class ExpandedSongDef : SongDef
+    public class TrackDef : SongDef
     {
         public List<BiomeDef> allowedBiomes;
         public bool playDuringBattles = false;

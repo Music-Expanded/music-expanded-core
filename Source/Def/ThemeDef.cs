@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using Verse;
 
-namespace MusicExpanded.Def
+namespace MusicExpanded
 {
-    public class ThemeDef : Verse.Def
+    public class ThemeDef : Def
     {
-        public List<SongDef> tracks;
+        public List<TrackDef> tracks;
     }
 }

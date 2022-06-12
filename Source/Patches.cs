@@ -13,8 +13,12 @@ namespace MusicExpanded
         {
             static bool Prefix(MusicManagerPlay __instance, ref SongDef __result)
             {
-                IEnumerable<TrackDef> tracks = DefDatabase<TrackDef>.AllDefs.Where((TrackDef song) => Utilities.AppropriateNow(__instance, song));
-                __result = tracks.First();
+                // TODO: Get current theme.
+                ThemeDef theme = DefDatabase<ThemeDef>.GetNamed("ME_Glitterworld");
+                IEnumerable<TrackDef> tracks = theme.tracks.Where(track => Utilities.AppropriateNow(track));
+                // TODO: Handle multiple valid tracks
+                __result = tracks.First() as SongDef;
+                Log.Warning("Playing " + __result);
                 return true;
             }
         }

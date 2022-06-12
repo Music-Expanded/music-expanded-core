@@ -2,13 +2,24 @@
 We might want to organize the tracks in folders that make sense 
 Maybe /MusicExpanded/Glitterworld/Scenario_Bugin.mp3 instead?
 
-Possible defname format: MusicExpanded_Theme_Title?
+Possible defname format: ME_Theme_Title?
 -->
 <Defs>
     <MusicExpanded.TrackDef>
-        <label>Glitterworld Scenario Begin</label>
-        <defName>MusicExpanded_Glitterworld_ScenarioBegin</defName>
+        <label>Glitterworld - Scenario Begin</label>
+        <defName>ME_Glitterworld_ScenarioBegin</defName>
         <clipPath>MusicExpanded/Glitterworld/Glitterworld_Scenario_Begin</clipPath>
-        <volume>1</volume>
     </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Glitterword - Aurora Borealis</label>
+        <defName>ME_Glitterworld_AuroraBorealis</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Aurora Borealis</clipPath>
+    </MusicExpanded.TrackDef>
+
+    <MusicExpanded.ThemeDef>
+        <defName>ME_Glitterworld</defName>
+        <tracks>
+            <li>ME_Glitterworld_AuroraBorealis</li>
+        </tracks>
+    </MusicExpanded.ThemeDef>
 </Defs>

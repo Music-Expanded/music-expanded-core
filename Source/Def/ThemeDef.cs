@@ -5,6 +5,6 @@ namespace MusicExpanded
 {
     public class ThemeDef : Def
     {
-        public List<SongDef> tracks;
+        public List<TrackDef> tracks;
     }
 }

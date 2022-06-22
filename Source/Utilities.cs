@@ -20,7 +20,7 @@ namespace MusicExpanded
         }
         public static ThemeDef GetTheme()
         {
-            return DefDatabase<ThemeDef>.GetNamed("ME_Glitterworld");
+            return DefDatabase<ThemeDef>.GetNamed(Core.selectedTheme);
         }
     }
 }

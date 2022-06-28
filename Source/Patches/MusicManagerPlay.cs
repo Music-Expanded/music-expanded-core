@@ -1,20 +1,22 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace MusicExpanded
+namespace MusicExpanded.Patches
 {
-    public class Patches
+    public class MusicManagerPlay
     {
-        [HarmonyPatch(typeof(MusicManagerPlay), "ChooseNextSong")]
+        public static FieldInfo forcedSong = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "forcedNextSong");
+        [HarmonyPatch(typeof(RimWorld.MusicManagerPlay), "ChooseNextSong")]
         class ChooseNextSong
         {
-            static bool Prefix(MusicManagerPlay __instance, ref SongDef __result)
+            static bool Prefix(RimWorld.MusicManagerPlay __instance, ref SongDef __result)
             {
-                Object forcedSong = AccessTools.Field(typeof(MusicManagerPlay), "forcedNextSong").GetValue(__instance);
+                Object forcedSong = MusicManagerPlay.forcedSong.GetValue(__instance);
                 if (forcedSong != null)
                     return true;
                 ThemeDef theme = Utilities.GetTheme();

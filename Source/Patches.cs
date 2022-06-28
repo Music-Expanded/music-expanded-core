@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
@@ -8,30 +9,18 @@ namespace MusicExpanded
 {
     public class Patches
     {
-        private static bool forceNextSong = false;
         [HarmonyPatch(typeof(MusicManagerPlay), "ChooseNextSong")]
         class ChooseNextSong
         {
             static bool Prefix(MusicManagerPlay __instance, ref SongDef __result)
             {
-                if (forceNextSong)
-                {
-                    forceNextSong = false;
+                Object forcedSong = AccessTools.Field(typeof(MusicManagerPlay), "forcedNextSong").GetValue(__instance);
+                if (forcedSong != null)
                     return true;
-                }
                 ThemeDef theme = Utilities.GetTheme();
                 IEnumerable<TrackDef> tracks = theme.tracks.Where(track => Utilities.AppropriateNow(track));
                 __result = tracks.RandomElementByWeight((TrackDef s) => s.commonality) as SongDef;
                 return false;
-            }
-        }
-        [HarmonyPatch(typeof(MusicManagerPlay), "ForceStartSong")]
-        class ForceStartSong
-        {
-            static bool Prefix(MusicManagerPlay __instance, SongDef song, bool ignorePrefsVolume)
-            {
-                forceNextSong = true;
-                return true;
             }
         }
         [HarmonyPatch(typeof(Screen_Credits), "EndCreditsSong", MethodType.Getter)]

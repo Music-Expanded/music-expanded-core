@@ -6,8 +6,7 @@ namespace MusicExpanded
 {
     public static class Utilities
     {
-        private static TrackDef lastPlayed;
-        public static bool AppropriateNow(TrackDef track)
+        public static bool AppropriateNow(TrackDef track, SongDef lastPlayed)
         {
             // Figure out if a track is appropriate right now.
             // Map map = Find.AnyPlayerHomeMap ?? Find.CurrentMap;
@@ -15,7 +14,6 @@ namespace MusicExpanded
                 lastPlayed == track
                 || track.playOnCredits
             ) return false;
-            lastPlayed = track;
             return true;
         }
         public static ThemeDef GetTheme()

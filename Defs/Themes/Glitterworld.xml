@@ -146,4 +146,18 @@ Possible defname format: ME_Theme_Title?
             <li>ME_Glitterworld_WeDontTakeKindly</li>
         </tracks>
     </MusicExpanded.ThemeDef>
+
+    
+    <MusicExpanded.TrackDef>
+        <label>Beep</label>
+        <defName>ME_Test_Beep</defName>
+        <clipPath>MusicExpanded/Glitterworld/beep</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.ThemeDef>
+        <defName>ME_Test</defName>
+        <tracks>
+            <li>ME_Test_Beep</li>
+            <li>ME_Test_Beep</li>
+        </tracks>
+    </MusicExpanded.ThemeDef>
 </Defs>

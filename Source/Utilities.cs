@@ -13,6 +13,7 @@ namespace MusicExpanded
             if (
                 lastPlayed == track
                 || track.playOnCredits
+                || track.playOnMainMenu
             ) return false;
             return true;
         }

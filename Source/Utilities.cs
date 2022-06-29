@@ -49,8 +49,13 @@ namespace MusicExpanded
         }
         public static Cue BattleCue(float points)
         {
-            // through debug options, I got around 5000 for a raid, so I'll arbitrarily say that's a legendary threat.
-            return Cue.BattleLegendary;
+            if (points > 5000)
+                return Cue.BattleLegendary;
+            if (points > 2500)
+                return Cue.BattleLarge;
+            if (points > 500)
+                return Cue.BattleMedium;
+            return Cue.BattleSmall;
         }
     }
 }

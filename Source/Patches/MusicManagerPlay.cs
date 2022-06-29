@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -43,7 +42,6 @@ namespace MusicExpanded.Patches
         {
             static bool Prefix(ref SongDef __result)
             {
-                // This is way too much on one line, maybe this should be cleaned up a bit?
                 TrackDef track = Utilities.GetTrack(Cue.Credits);
                 if (track != null)
                 {

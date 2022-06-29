@@ -37,7 +37,6 @@ namespace MusicExpanded.Patches
                 SongDef chosenTrack = tracks.RandomElementByWeight((TrackDef s) => s.commonality) as SongDef;
                 Utilities.ShowNowPlaying(chosenTrack);
                 __result = chosenTrack;
-                MusicManagerPlay.lastStartedSong.SetValue(__instance, chosenTrack);
                 return false;
             }
         }

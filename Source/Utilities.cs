@@ -47,5 +47,15 @@ namespace MusicExpanded
             if (Core.showNowPlaying)
                 Messages.Message("ME_NowPlaying".Translate(song.label).ToString(), null, MessageTypeDefOf.NeutralEvent, null, false);
         }
+        public static Cue BattleCue(float points)
+        {
+            if (points > 5000)
+                return Cue.BattleLegendary;
+            if (points > 2500)
+                return Cue.BattleLarge;
+            if (points > 500)
+                return Cue.BattleMedium;
+            return Cue.BattleSmall;
+        }
     }
 }

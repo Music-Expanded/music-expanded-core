@@ -47,5 +47,10 @@ namespace MusicExpanded
             if (Core.showNowPlaying)
                 Messages.Message("ME_NowPlaying".Translate(song.label).ToString(), null, MessageTypeDefOf.NeutralEvent, null, false);
         }
+        public static Cue BattleCue(float points)
+        {
+            // through debug options, I got around 5000 for a raid, so I'll arbitrarily say that's a legendary threat.
+            return Cue.BattleLegendary;
+        }
     }
 }

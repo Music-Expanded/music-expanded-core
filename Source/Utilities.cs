@@ -1,5 +1,3 @@
-using HugsLib;
-using RimWorld;
 using Verse;
 
 namespace MusicExpanded
@@ -13,6 +11,7 @@ namespace MusicExpanded
             if (
                 lastPlayed == track
                 || track.playOnCredits
+                || track.playOnMainMenu
             ) return false;
             return true;
         }

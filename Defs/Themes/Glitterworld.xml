@@ -83,11 +83,11 @@ Possible defname format: ME_Theme_Title?
         <defName>ME_Glitterworld_MediumBattle</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Medium Battle</clipPath>
     </MusicExpanded.TrackDef>
-    <!-- TODO: Figure out how this one actually gets played, doesn't seem to go through MusicManagerPlay -->
     <MusicExpanded.TrackDef>
         <label>Glitterword - Menu Music</label>
         <defName>ME_Glitterworld_MenuMusic</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Menu Music</clipPath>
+        <playOnMainMenu>true</playOnMainMenu>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Glitterword - Silver City Ruins</label>
@@ -138,6 +138,7 @@ Possible defname format: ME_Theme_Title?
             <li>ME_Glitterworld_LargeBattle</li>
             <li>ME_Glitterworld_LegendaryBattle</li>
             <li>ME_Glitterworld_MediumBattle</li>
+            <li>ME_Glitterworld_MenuMusic</li>
             <li>ME_Glitterworld_SilverCityRuins</li>
             <li>ME_Glitterworld_SmallBattle</li>
             <li>ME_Glitterworld_Society</li>

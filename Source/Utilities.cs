@@ -1,4 +1,6 @@
 using Verse;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace MusicExpanded
 {
@@ -12,12 +14,32 @@ namespace MusicExpanded
                 lastPlayed == track
                 || track.playOnCredits
                 || track.playOnMainMenu
+                || track.cue != Cue.None
             ) return false;
             return true;
         }
         public static ThemeDef GetTheme()
         {
             return DefDatabase<ThemeDef>.GetNamed(Core.selectedTheme);
+        }
+        public static TrackDef GetTrack(Cue cue)
+        {
+            ThemeDef theme = GetTheme();
+            IEnumerable<TrackDef> tracks = theme.tracks.Where(track =>
+            {
+                return track.cue == cue;
+            });
+            return tracks.RandomElementByWeight((TrackDef s) => s.commonality);
+        }
+        public static void PlayTrack(Cue cue)
+        {
+            TrackDef track = GetTrack(cue);
+            if (track == null)
+            {
+                Log.Warning("Tried to play cue'd track " + cue + " but none was found");
+                return;
+            }
+            Find.MusicManagerPlay.ForceStartSong(track as SongDef, false);
         }
     }
 }

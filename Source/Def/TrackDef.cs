@@ -10,5 +10,6 @@ namespace MusicExpanded
         public bool playDuringBattles = false;
         public bool playOnMainMenu = false;
         public bool playOnCredits = false;
+        public Cue cue = Cue.None;
     }
 }

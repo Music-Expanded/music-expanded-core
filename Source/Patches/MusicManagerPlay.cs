@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -43,11 +42,10 @@ namespace MusicExpanded.Patches
         {
             static bool Prefix(ref SongDef __result)
             {
-                // This is way too much on one line, maybe this should be cleaned up a bit?
-                IEnumerable<TrackDef> creditTracks = Utilities.GetTheme().tracks.Where(track => track.playOnCredits);
-                if (creditTracks.Any())
+                TrackDef track = Utilities.GetTrack(Cue.Credits);
+                if (track != null)
                 {
-                    __result = creditTracks.RandomElementByWeight((TrackDef s) => s.commonality) as SongDef;
+                    __result = track as SongDef;
                     return false;
                 }
                 return true;

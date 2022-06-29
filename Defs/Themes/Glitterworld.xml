@@ -36,7 +36,7 @@ Possible defname format: ME_Theme_Title?
         <label>Glitterword - Credits</label>
         <defName>ME_Glitterworld_Credits</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Credits</clipPath>
-        <playOnCredits>true</playOnCredits>
+        <cue>Credits</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Glitterword - Defense</label>
@@ -72,22 +72,25 @@ Possible defname format: ME_Theme_Title?
         <label>Glitterword - Large Battle (Feat. Parker Mann)</label>
         <defName>ME_Glitterworld_LargeBattle</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Large Battle (Feat. Parker Mann)</clipPath>
+        <cue>BattleLarge</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Glitterword - Legendary Battle</label>
         <defName>ME_Glitterworld_LegendaryBattle</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Legendary Battle</clipPath>
+        <cue>BattleLegendary</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Glitterword - Medium Battle</label>
         <defName>ME_Glitterworld_MediumBattle</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Medium Battle</clipPath>
+        <cue>BattleMedium</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Glitterword - Menu Music</label>
         <defName>ME_Glitterworld_MenuMusic</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Menu Music</clipPath>
-        <playOnMainMenu>true</playOnMainMenu>
+        <cue>MainMenu</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Glitterword - Silver City Ruins</label>
@@ -98,6 +101,7 @@ Possible defname format: ME_Theme_Title?
         <label>Glitterword - Small Battle</label>
         <defName>ME_Glitterworld_SmallBattle</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Small Battle</clipPath>
+        <cue>BattleSmall</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Glitterword - Society</label>

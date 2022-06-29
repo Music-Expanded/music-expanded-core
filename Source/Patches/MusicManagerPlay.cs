@@ -22,7 +22,10 @@ namespace MusicExpanded.Patches
             {
                 System.Object forcedSong = MusicManagerPlay.forcedSong.GetValue(__instance);
                 if (forcedSong != null)
+                {
+                    Utilities.ShowNowPlaying(forcedSong as SongDef);
                     return true;
+                }
                 ThemeDef theme = Utilities.GetTheme();
                 SongDef lastTrack = MusicManagerPlay.lastStartedSong.GetValue(__instance) as SongDef;
                 IEnumerable<TrackDef> tracks = theme.tracks.Where(track => Utilities.AppropriateNow(track, lastTrack));
@@ -32,6 +35,7 @@ namespace MusicExpanded.Patches
                     return false;
                 }
                 SongDef chosenTrack = tracks.RandomElementByWeight((TrackDef s) => s.commonality) as SongDef;
+                Utilities.ShowNowPlaying(chosenTrack);
                 __result = chosenTrack;
                 MusicManagerPlay.lastStartedSong.SetValue(__instance, chosenTrack);
                 return false;

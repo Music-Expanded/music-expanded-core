@@ -36,7 +36,7 @@ Possible defname format: ME_Theme_Title?
         <label>Glitterword - Credits</label>
         <defName>ME_Glitterworld_Credits</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Credits</clipPath>
-        <playOnCredits>true</playOnCredits>
+        <cue>Credits</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Glitterword - Defense</label>

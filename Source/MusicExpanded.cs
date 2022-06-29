@@ -7,6 +7,7 @@ namespace MusicExpanded
     public class Core : ModBase
     {
         public static SettingHandle<string> selectedTheme;
+        public static SettingHandle<bool> showNowPlaying;
         public override void DefsLoaded()
         {
             selectedTheme = Settings.GetHandle<string>(
@@ -19,6 +20,12 @@ namespace MusicExpanded
                     // Validates that there is a ThemeDef that exists with this defName
                     return DefDatabase<ThemeDef>.GetNamedSilentFail(value) != null;
                 }
+            );
+            showNowPlaying = Settings.GetHandle<bool>(
+                "showNowPlaying",
+                "ME_ShowNowPlaying".Translate(),
+                "ME_ShowNowPlayingDescription".Translate(),
+                true
             );
         }
     }

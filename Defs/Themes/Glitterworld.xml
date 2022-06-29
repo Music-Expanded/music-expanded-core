@@ -162,7 +162,6 @@ Possible defname format: ME_Theme_Title?
         <defName>ME_Test</defName>
         <tracks>
             <li>ME_Test_Beep</li>
-            <li>ME_Test_Beep</li>
         </tracks>
     </MusicExpanded.ThemeDef>
 </Defs>

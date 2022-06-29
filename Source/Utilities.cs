@@ -1,6 +1,7 @@
 using Verse;
 using System.Linq;
 using System.Collections.Generic;
+using RimWorld;
 
 namespace MusicExpanded
 {
@@ -40,6 +41,11 @@ namespace MusicExpanded
                 return;
             }
             Find.MusicManagerPlay.ForceStartSong(track as SongDef, false);
+        }
+        public static void ShowNowPlaying(SongDef song)
+        {
+            if (Core.showNowPlaying)
+                Messages.Message("ME_NowPlaying".Translate(song.label).ToString(), null, MessageTypeDefOf.NeutralEvent, null, false);
         }
     }
 }

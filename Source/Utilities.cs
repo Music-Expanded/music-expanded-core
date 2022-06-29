@@ -31,5 +31,15 @@ namespace MusicExpanded
             });
             return tracks.RandomElementByWeight((TrackDef s) => s.commonality);
         }
+        public static void PlayTrack(Cue cue)
+        {
+            TrackDef track = GetTrack(cue);
+            if (track == null)
+            {
+                Log.Warning("Tried to play cue'd track " + cue + " but none was found");
+                return;
+            }
+            Find.MusicManagerPlay.ForceStartSong(track as SongDef, false);
+        }
     }
 }

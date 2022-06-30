@@ -16,19 +16,21 @@ namespace MusicExpanded.Patches
         {
             static IEnumerable<MethodBase> TargetMethods()
             {
-                foreach (Type type in new List<Type> {
-                    typeof(RimWorld.IncidentWorker_RaidEnemy),
-                    typeof(RimWorld.IncidentWorker_Infestation),
-                    typeof(RimWorld.IncidentWorker_Ambush),
-                    typeof(RimWorld.IncidentWorker_AnimalInsanityMass),
-                    typeof(RimWorld.IncidentWorker_AnimalInsanitySingle),
-                    typeof(RimWorld.IncidentWorker_MechCluster)
-                })
-                {
-                    yield return AccessTools.Method(type, "TryExecuteWorker");
-                }
+                return AccessTools.AllTypes()
+                    .Where(type => type.IsSubclassOf(typeof(RimWorld.IncidentWorker)))
+                    .SelectMany(type => type.GetMethods())
+                    .Where(method => method.Name == "TryExecute");
             }
-            static void Postfix(IncidentParms parms, ref bool __result) => Utilities.PlayTrack(Utilities.BattleCue(parms.points));
+            static void Postfix(RimWorld.IncidentWorker __instance, IncidentParms parms, ref bool __result)
+            {
+                if (__result != true) return;
+                ModExtension.PlayCue playCue = __instance.def.GetModExtension<ModExtension.PlayCue>();
+                if (playCue == null) return;
+                if (playCue.playBattleTrack)
+                    Utilities.PlayTrack(Utilities.BattleCue(parms.points));
+                else
+                    Utilities.PlayTrack(playCue.cue);
+            }
 
         }
     }

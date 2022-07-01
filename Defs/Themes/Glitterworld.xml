@@ -6,13 +6,6 @@ Possible defname format: ME_Theme_Title?
 -->
 <Defs>
     <MusicExpanded.TrackDef>
-        <!-- This might need to be a SoundDef to actually work with what the game expects -->
-        <label>Glitterworld - Scenario Begin</label>
-        <defName>ME_Glitterworld_ScenarioBegin</defName>
-        <clipPath>MusicExpanded/Glitterworld/Glitterworld_Scenario_Begin</clipPath>
-    </MusicExpanded.TrackDef>
-
-    <MusicExpanded.TrackDef>
         <label>Glitterword - Aurora Borealis</label>
         <defName>ME_Glitterworld_AuroraBorealis</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Aurora Borealis</clipPath>
@@ -113,6 +106,12 @@ Possible defname format: ME_Theme_Title?
         <defName>ME_Glitterworld_SundayAtTheHydroponics</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Sunday at the Hydroponics</clipPath>
     </MusicExpanded.TrackDef>
+    <!-- Doesn't seem to like m4a -->
+    <!-- <MusicExpanded.TrackDef>
+        <label>Glitterword - Time Moves Slow</label>
+        <defName>ME_Glitterworld_TimeMovesSlow</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Time Moves Slow</clipPath>
+    </MusicExpanded.TrackDef> -->
     <MusicExpanded.TrackDef>
         <label>Glitterword - Utopia</label>
         <defName>ME_Glitterworld_Utopia</defName>
@@ -123,7 +122,6 @@ Possible defname format: ME_Theme_Title?
         <defName>ME_Glitterworld_WeDontTakeKindly</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - We Don't Take Kindly (Feat. Yi Nantiro)</clipPath>
     </MusicExpanded.TrackDef>
-    <!-- Leaving Secret songs out atm -->
 
     <MusicExpanded.ThemeDef>
         <defName>ME_Glitterworld</defName>
@@ -147,21 +145,9 @@ Possible defname format: ME_Theme_Title?
             <li>ME_Glitterworld_SmallBattle</li>
             <li>ME_Glitterworld_Society</li>
             <li>ME_Glitterworld_SundayAtTheHydroponics</li>
+            <!-- <li>ME_Glitterworld_TimeMovesSlow</li> -->
             <li>ME_Glitterworld_Utopia</li>
             <li>ME_Glitterworld_WeDontTakeKindly</li>
-        </tracks>
-    </MusicExpanded.ThemeDef>
-
-    
-    <MusicExpanded.TrackDef>
-        <label>Beep</label>
-        <defName>ME_Test_Beep</defName>
-        <clipPath>MusicExpanded/Glitterworld/beep</clipPath>
-    </MusicExpanded.TrackDef>
-    <MusicExpanded.ThemeDef>
-        <defName>ME_Test</defName>
-        <tracks>
-            <li>ME_Test_Beep</li>
         </tracks>
     </MusicExpanded.ThemeDef>
 </Defs>

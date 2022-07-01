@@ -1,0 +1,159 @@
+
+<Defs>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - A Rare Silence</label>
+        <defName>ME_MedievalFantasy_ARareSilence</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - A Rare Silence</clipPath>
+    </MusicExpanded.TrackDef>
+    <!-- Todo: This is probably a typo but I'll keep it here. -->
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Acients</label>
+        <defName>ME_MedievalFantasy_Acients</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Acients</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Credits</label>
+        <defName>ME_MedievalFantasy_Credits</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Credits</clipPath>
+        <cue>Credits</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Crystals</label>
+        <defName>ME_MedievalFantasy_Crystals</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Crystals</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Diamond Gestalt</label>
+        <defName>ME_MedievalFantasy_DiamondGestalt</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Diamond Gestalt</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Diamonds</label>
+        <defName>ME_MedievalFantasy_Diamonds</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Diamonds</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Far, Far from Home</label>
+        <defName>ME_MedievalFantasy_FarFarFromHome</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Far, Far from Home</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Forever Hills</label>
+        <defName>ME_MedievalFantasy_ForeverHills</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Forever Hills</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - For the King</label>
+        <defName>ME_MedievalFantasy_ForTheKing</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - For the King</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Hand Me My Bow</label>
+        <defName>ME_MedievalFantasy_HandMeMyBow</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Hand Me My Bow</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Large Battle</label>
+        <defName>ME_MedievalFantasy_LargeBattle</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Large Battle</clipPath>
+        <cue>BattleLarge</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Legendary Battle</label>
+        <defName>ME_MedievalFantasy_LegendaryBattle</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Legendary Battle</clipPath>
+        <cue>BattleLegendary</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Love &amp; Loss</label>
+        <defName>ME_MedievalFantasy_LoveNLoss</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Love &amp; Loss</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Madness</label>
+        <defName>ME_MedievalFantasy_Madness</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Madness</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Medium Battle</label>
+        <defName>ME_MedievalFantasy_MediumBattle</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Medium Battle</clipPath>
+        <cue>BattleMedium</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Menu Music</label>
+        <defName>ME_MedievalFantasy_MenuMusic</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Menu Music</clipPath>
+        <cue>MainMenu</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Nature</label>
+        <defName>ME_MedievalFantasy_Nature</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Nature</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Prepare</label>
+        <defName>ME_MedievalFantasy_Prepare</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Prepare</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Small Battle</label>
+        <defName>ME_MedievalFantasy_SmallBattle</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Small Battle</clipPath>
+        <cue>BattleSmall</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Stay Home</label>
+        <defName>ME_MedievalFantasy_StayHome</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Stay Home</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - The Cult</label>
+        <defName>ME_MedievalFantasy_TheCult</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - The Cult</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - The Mixing Pot</label>
+        <defName>ME_MedievalFantasy_TheMixingPot</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - The Mixing Pot</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Travel Far</label>
+        <defName>ME_MedievalFantasy_TravelFar</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Travel Far</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - We Should Give This Place a Name</label>
+        <defName>ME_MedievalFantasy_WeShouldGiveThisPlaceAName</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - We Should Give This Place a Name</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.ThemeDef>
+        <defName>ME_MedievalFantasy</defName>
+        <tracks>
+            <li>ME_MedievalFantasy_ARareSilence</li>
+            <li>ME_MedievalFantasy_Acients</li>
+            <li>ME_MedievalFantasy_Credits</li>
+            <li>ME_MedievalFantasy_Crystals</li>
+            <li>ME_MedievalFantasy_DiamondGestalt</li>
+            <li>ME_MedievalFantasy_Diamonds</li>
+            <li>ME_MedievalFantasy_FarFarFromHome</li>
+            <li>ME_MedievalFantasy_ForTheKing</li>
+            <li>ME_MedievalFantasy_ForeverHills</li>
+            <li>ME_MedievalFantasy_HandMeMyBow</li>
+            <li>ME_MedievalFantasy_LargeBattle</li>
+            <li>ME_MedievalFantasy_LegendaryBattle</li>
+            <li>ME_MedievalFantasy_LoveNLoss</li>
+            <li>ME_MedievalFantasy_Madness</li>
+            <li>ME_MedievalFantasy_MediumBattle</li>
+            <li>ME_MedievalFantasy_MenuMusic</li>
+            <li>ME_MedievalFantasy_Nature</li>
+            <li>ME_MedievalFantasy_Prepare</li>
+            <li>ME_MedievalFantasy_SmallBattle</li>
+            <li>ME_MedievalFantasy_StayHome</li>
+            <li>ME_MedievalFantasy_TheCult</li>
+            <li>ME_MedievalFantasy_TheMixingPot</li>
+            <li>ME_MedievalFantasy_TravelFar</li>
+            <li>ME_MedievalFantasy_WeShouldGiveThisPlaceAName</li>
+        </tracks>
+    </MusicExpanded.ThemeDef>
+</Defs>

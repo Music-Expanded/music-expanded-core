@@ -18,9 +18,19 @@
         <cue>Credits</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Crystals</label>
+        <defName>ME_MedievalFantasy_Crystals</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Crystals</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
         <label>Medieval (Fantasy) - Diamond Gestalt</label>
         <defName>ME_MedievalFantasy_DiamondGestalt</defName>
         <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Diamond Gestalt</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Diamonds</label>
+        <defName>ME_MedievalFantasy_Diamonds</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Diamonds</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Medieval (Fantasy) - Far, Far from Home</label>
@@ -55,9 +65,9 @@
         <cue>BattleLegendary</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Medieval (Fantasy) - Love & Loss</label>
+        <label>Medieval (Fantasy) - Love &amp; Loss</label>
         <defName>ME_MedievalFantasy_LoveNLoss</defName>
-        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Love & Loss</clipPath>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Love &amp; Loss</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Medieval (Fantasy) - Madness</label>

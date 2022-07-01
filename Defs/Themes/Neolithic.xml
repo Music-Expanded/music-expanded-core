@@ -26,9 +26,9 @@
         <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Desert for Miles</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Neolithic - Dusk & Dawn</label>
+        <label>Neolithic - Dusk &amp; Dawn</label>
         <defName>ME_Neolithic_DuskNDawn</defName>
-        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Dusk & Dawn</clipPath>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Dusk &amp; Dawn</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Neolithic - Essence of Life</label>
@@ -70,7 +70,7 @@
     <MusicExpanded.TrackDef>
         <label>Neolithic - Medium Battle</label>
         <defName>ME_Neolithic_MediumBattle</defName>
-        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Medium Battle (loop)</clipPath>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Medium Battle (Loop)</clipPath>
         <cue>BattleMedium</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
@@ -113,7 +113,7 @@
     <MusicExpanded.TrackDef>
         <label>Neolithic - Wooden Will (Feat. Jon Algar)</label>
         <defName>ME_Neolithic_WoodenWill</defName>
-        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Wooden Will</clipPath>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Wooden Will (Feat. Jon Algar)</clipPath>
     </MusicExpanded.TrackDef>
     
     <MusicExpanded.ThemeDef>

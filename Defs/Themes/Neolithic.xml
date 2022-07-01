@@ -1,0 +1,146 @@
+<Defs>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - After His Death</label>
+        <defName>ME_Neolithic_AfterHisDeath</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - After His Death</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Cannibal Tribe</label>
+        <defName>ME_Neolithic_CannibalTribe</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Cannibal Tribe</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Credits</label>
+        <defName>ME_Neolithic_Credits</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Credits</clipPath>
+        <cue>Credits</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Crimson Savannah</label>
+        <defName>ME_Neolithic_CrimsonSavannah</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Crimson Savannah</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Desert for Miles</label>
+        <defName>ME_Neolithic_DesertForMiles</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Desert for Miles</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Dusk & Dawn</label>
+        <defName>ME_Neolithic_DuskNDawn</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Dusk & Dawn</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Essence of Life</label>
+        <defName>ME_Neolithic_EssenceOfLife</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Essence of Life</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Gentle Tribe</label>
+        <defName>ME_Neolithic_GentleTribe</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Gentle Tribe</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Green Clouds</label>
+        <defName>ME_Neolithic_GreenClouds</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Green Clouds</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Hidden City</label>
+        <defName>ME_Neolithic_HiddenCity</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Hidden City</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Large Battle</label>
+        <defName>ME_Neolithic_LargeBattle</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Large Battle</clipPath>
+        <cue>BattleLarge</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Legendary Battle</label>
+        <defName>ME_Neolithic_LegendaryBattle</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Legendary Battle</clipPath>
+        <cue>BattleLegendary</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Like My Father</label>
+        <defName>ME_Neolithic_LikeMyFather</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Like My Father</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Medium Battle</label>
+        <defName>ME_Neolithic_MediumBattle</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Medium Battle (loop)</clipPath>
+        <cue>BattleMedium</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Menu Music</label>
+        <defName>ME_Neolithic_MenuMusic</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Menu Music</clipPath>
+        <cue>MainMenu</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Nomads</label>
+        <defName>ME_Neolithic_Nomads</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Nomads</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Scouts</label>
+        <defName>ME_Neolithic_Scouts</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Scouts</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Small Battle</label>
+        <defName>ME_Neolithic_SmallBattle</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Small Battle</clipPath>
+        <cue>BattleSmall</cue>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Stone Gestalt</label>
+        <defName>ME_Neolithic_StoneGestalt</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Stone Gestalt</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - The Rimworld</label>
+        <defName>ME_Neolithic_TheRimWorld</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - The Rimworld</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Tribal By Nature</label>
+        <defName>ME_Neolithic_TribalByNature</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Tribal By Nature</clipPath>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Neolithic - Wooden Will (Feat. Jon Algar)</label>
+        <defName>ME_Neolithic_WoodenWill</defName>
+        <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Wooden Will</clipPath>
+    </MusicExpanded.TrackDef>
+    
+    <MusicExpanded.ThemeDef>
+        <defName>ME_Neolithic</defName>
+        <tracks>
+            <li>ME_Neolithic_AfterHisDeath</li>
+            <li>ME_Neolithic_CannibalTribe</li>
+            <li>ME_Neolithic_Credits</li>
+            <li>ME_Neolithic_CrimsonSavannah</li>
+            <li>ME_Neolithic_DesertForMiles</li>
+            <li>ME_Neolithic_DuskNDawn</li>
+            <li>ME_Neolithic_EssenceOfLife</li>
+            <li>ME_Neolithic_GentleTribe</li>
+            <li>ME_Neolithic_GreenClouds</li>
+            <li>ME_Neolithic_HiddenCity</li>
+            <li>ME_Neolithic_LargeBattle</li>
+            <li>ME_Neolithic_LegendaryBattle</li>
+            <li>ME_Neolithic_LikeMyFather</li>
+            <li>ME_Neolithic_MediumBattle</li>
+            <li>ME_Neolithic_MenuMusic</li>
+            <li>ME_Neolithic_Nomads</li>
+            <li>ME_Neolithic_Scouts</li>
+            <li>ME_Neolithic_SmallBattle</li>
+            <li>ME_Neolithic_StoneGestalt</li>
+            <li>ME_Neolithic_TheRimWorld</li>
+            <li>ME_Neolithic_TribalByNature</li>
+            <li>ME_Neolithic_WoodenWill</li>
+        </tracks>
+    </MusicExpanded.ThemeDef>
+</Defs>

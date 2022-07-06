@@ -1,0 +1,9 @@
+
+<Defs>
+    <MusicExpanded.TrackDef>
+        <label>Music Expanded - Man In Black</label>
+        <defName>ME_Shared_ManInBlack</defName>
+        <clipPath>MusicExpanded/Music Expanded - (Secret Song) Man In Black Arrives, Any Genre</clipPath>
+        <cue>ManInBlack</cue>
+    </MusicExpanded.TrackDef>
+</Defs>

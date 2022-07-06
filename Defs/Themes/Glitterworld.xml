@@ -126,6 +126,7 @@ Possible defname format: ME_Theme_Title?
     <MusicExpanded.ThemeDef>
         <defName>ME_Glitterworld</defName>
         <tracks>
+            <li>ME_Shared_ManInBlack</li>
             <li>ME_Glitterworld_AuroraBorealis</li>
             <li>ME_Glitterworld_BlueRuins</li>
             <li>ME_Glitterworld_ChromeGestalt</li>

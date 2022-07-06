@@ -1,9 +1,3 @@
-<!-- 
-We might want to organize the tracks in folders that make sense 
-Maybe /MusicExpanded/Glitterworld/Scenario_Bugin.mp3 instead?
-
-Possible defname format: ME_Theme_Title?
--->
 <Defs>
     <MusicExpanded.TrackDef>
         <label>Glitterword - Aurora Borealis</label>
@@ -123,9 +117,20 @@ Possible defname format: ME_Theme_Title?
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - We Don't Take Kindly (Feat. Yi Nantiro)</clipPath>
     </MusicExpanded.TrackDef>
 
+    <!-- Secret Tracks -->
+    <MusicExpanded.TrackDef>
+        <label>Odeum's Song</label>
+        <defName>ME_Glitterworld_StartWithOdeum</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - [Secret Song] Start Colony With a Pawn Named Odeum</clipPath>
+        <cue>StartWithNamedColonist</cue>
+        <namedPawn>Odeum</namedPawn>
+    </MusicExpanded.TrackDef>
+
     <MusicExpanded.ThemeDef>
         <defName>ME_Glitterworld</defName>
         <tracks>
+            <li>ME_Glitterworld_StartWithOdeum</li>
+            <li>ME_Shared_ManInBlack</li>
             <li>ME_Glitterworld_AuroraBorealis</li>
             <li>ME_Glitterworld_BlueRuins</li>
             <li>ME_Glitterworld_ChromeGestalt</li>

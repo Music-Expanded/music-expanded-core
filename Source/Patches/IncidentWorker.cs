@@ -3,9 +3,6 @@ using System.Reflection;
 using HarmonyLib;
 using RimWorld;
 using System.Linq;
-using UnityEngine;
-using Verse;
-using System;
 
 namespace MusicExpanded.Patches
 {

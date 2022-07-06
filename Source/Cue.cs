@@ -8,6 +8,9 @@ namespace MusicExpanded
         BattleLarge,
         BattleLegendary,
         MainMenu,
-        Credits
+        Credits,
+        ManInBlack,
+        LoneColonist,
+        StartWithNamedColonist
     }
 }

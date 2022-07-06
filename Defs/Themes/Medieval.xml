@@ -130,6 +130,7 @@
     <MusicExpanded.ThemeDef>
         <defName>ME_MedievalFantasy</defName>
         <tracks>
+            <li>ME_Shared_ManInBlack</li>
             <li>ME_MedievalFantasy_ARareSilence</li>
             <li>ME_MedievalFantasy_Acients</li>
             <li>ME_MedievalFantasy_Credits</li>

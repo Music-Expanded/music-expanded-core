@@ -119,6 +119,7 @@
     <MusicExpanded.ThemeDef>
         <defName>ME_Neolithic</defName>
         <tracks>
+            <li>ME_Shared_ManInBlack</li>
             <li>ME_Neolithic_AfterHisDeath</li>
             <li>ME_Neolithic_CannibalTribe</li>
             <li>ME_Neolithic_Credits</li>

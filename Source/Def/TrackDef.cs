@@ -11,5 +11,6 @@ namespace MusicExpanded
         public bool playOnMainMenu = false;
         public bool playOnCredits = false;
         public Cue cue = Cue.None;
+        public NamedPawn namedPawn;
     }
 }

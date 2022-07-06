@@ -11,12 +11,6 @@ namespace MusicExpanded
         Credits,
         ManInBlack,
         LoneColonist,
-        StartWithNamedPawn
-    }
-    public enum NamedPawn
-    {
-        Caaz,
-        Evelyn,
-        Odeum,
+        StartWithNamedColonist
     }
 }

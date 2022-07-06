@@ -23,18 +23,18 @@ namespace MusicExpanded
         {
             return DefDatabase<ThemeDef>.GetNamed(Core.selectedTheme);
         }
-        public static TrackDef GetTrack(Cue cue)
+        public static TrackDef GetTrack(Cue cue, NamedPawn name = NamedPawn.None)
         {
             ThemeDef theme = GetTheme();
             IEnumerable<TrackDef> tracks = theme.tracks.Where(track =>
             {
-                return track.cue == cue;
+                return track.cue == cue && (name != NamedPawn.None || name == track.namedPawn);
             });
             return tracks.RandomElementByWeight((TrackDef s) => s.commonality);
         }
-        public static void PlayTrack(Cue cue)
+        public static void PlayTrack(Cue cue, NamedPawn name = NamedPawn.None)
         {
-            TrackDef track = GetTrack(cue);
+            TrackDef track = GetTrack(cue, name);
             if (track == null)
             {
                 Log.Warning("Tried to play cue'd track " + cue + " but none was found");

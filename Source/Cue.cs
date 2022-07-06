@@ -9,6 +9,14 @@ namespace MusicExpanded
         BattleLegendary,
         MainMenu,
         Credits,
-        ManInBlack
+        ManInBlack,
+        LoneColonist,
+        StartWithNamedPawn
+    }
+    public enum NamedPawn
+    {
+        Caaz,
+        Evelyn,
+        Odeum,
     }
 }

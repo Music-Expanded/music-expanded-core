@@ -11,9 +11,7 @@ namespace MusicExpanded.Patches
     public class MusicManagerPlay
     {
         public static MethodInfo startNewSong = AccessTools.Method(typeof(RimWorld.MusicManagerPlay), "StartNewSong");
-        public static MethodInfo appropriateNow = AccessTools.Method(typeof(RimWorld.MusicManagerPlay), "AppropriateNow");
         public static FieldInfo gameObjectCreated = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "gameObjectCreated");
-        public static FieldInfo audioSource = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "audioSource");
         public static FieldInfo forcedSong = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "forcedNextSong");
         public static FieldInfo lastStartedSong = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "lastStartedSong");
         [HarmonyPatch(typeof(RimWorld.MusicManagerPlay), "ChooseNextSong")]
@@ -59,9 +57,8 @@ namespace MusicExpanded.Patches
         {
             static bool Prefix(RimWorld.MusicManagerPlay __instance)
             {
-                AudioSource audioSource = MusicManagerPlay.audioSource.GetValue(__instance) as AudioSource;
                 bool gameObjectCreated = (bool)MusicManagerPlay.gameObjectCreated.GetValue(__instance);
-                if (!gameObjectCreated || audioSource.isPlaying)
+                if (!gameObjectCreated || __instance.IsPlaying || __instance.disabled)
                     return true;
                 try
                 {
@@ -80,10 +77,9 @@ namespace MusicExpanded.Patches
         {
             static bool Prefix(RimWorld.MusicManagerPlay __instance, SongDef song)
             {
-                AudioSource audioSource = MusicManagerPlay.audioSource.GetValue(__instance) as AudioSource;
                 bool gameObjectCreated = (bool)MusicManagerPlay.gameObjectCreated.GetValue(__instance);
                 MusicManagerPlay.forcedSong.SetValue(__instance, song);
-                return !(!gameObjectCreated || audioSource == null);
+                return !(!gameObjectCreated);
             }
         }
     }

@@ -10,7 +10,21 @@ namespace MusicExpanded
         public bool playDuringBattles = false;
         public bool playOnMainMenu = false;
         public bool playOnCredits = false;
+        public bool vanillaLogic = false;
         public Cue cue = Cue.None;
-        public NamedPawn namedPawn;
+        public string namedPawn;
+        public bool AppropriateNow(MusicManagerPlay manager, SongDef lastPlayed)
+        {
+            if (
+                lastPlayed == this
+                || cue != Cue.None
+            )
+                return false;
+
+            if (vanillaLogic)
+                return (bool)Patches.MusicManagerPlay.appropriateNow.Invoke(manager, new SongDef[] { this as SongDef });
+
+            return true;
+        }
     }
 }

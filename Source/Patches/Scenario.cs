@@ -11,9 +11,9 @@ namespace MusicExpanded.Patches
         [HarmonyPatch(typeof(RimWorld.Scenario), "PostGameStart")]
         class PostGameStart
         {
-            static bool NameMatches(Pawn pawn, NamedPawn name)
+            static bool NameMatches(Pawn pawn, string name)
             {
-                return pawn.Name.ToStringFull.ToLower().Contains(name.ToString().ToLower());
+                return pawn.Name.ToStringFull.ToLower().Contains(name.ToLower());
             }
             static void Postfix(RimWorld.Scenario __instance)
             {
@@ -22,16 +22,14 @@ namespace MusicExpanded.Patches
                 if (pawns.Count() == 1)
                 {
                     Utilities.PlayTrack(Cue.LoneColonist);
+                    return;
                 }
                 else
                 {
-                    foreach (NamedPawn name in Enum.GetValues(typeof(NamedPawn)))
-                    {
-                        if (pawns.Where(pawn => NameMatches(pawn, name)).Any())
-                        {
-                            Utilities.PlayTrack(Cue.StartWithNamedColonist, name);
-                        }
-                    }
+                    IEnumerable<TrackDef> tracks = ThemeDef.TracksWithNamedColonist;
+                    foreach (Pawn pawn in pawns)
+                        if (Utilities.PlayTrack(tracks.Where(track => NameMatches(pawn, track.namedPawn))))
+                            return;
                 }
             }
 

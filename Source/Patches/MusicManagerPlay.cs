@@ -11,6 +11,7 @@ namespace MusicExpanded.Patches
     public class MusicManagerPlay
     {
         public static MethodInfo startNewSong = AccessTools.Method(typeof(RimWorld.MusicManagerPlay), "StartNewSong");
+        public static MethodInfo appropriateNow = AccessTools.Method(typeof(RimWorld.MusicManagerPlay), "AppropriateNow");
         public static FieldInfo gameObjectCreated = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "gameObjectCreated");
         public static FieldInfo audioSource = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "audioSource");
         public static FieldInfo forcedSong = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "forcedNextSong");
@@ -26,12 +27,11 @@ namespace MusicExpanded.Patches
                     Utilities.ShowNowPlaying(forcedSong as SongDef);
                     return true;
                 }
-                ThemeDef theme = Utilities.GetTheme();
                 SongDef lastTrack = MusicManagerPlay.lastStartedSong.GetValue(__instance) as SongDef;
-                IEnumerable<TrackDef> tracks = theme.tracks.Where(track => Utilities.AppropriateNow(track, lastTrack));
+                IEnumerable<TrackDef> tracks = ThemeDef.ActiveTheme.tracks.Where(track => track.AppropriateNow(__instance, lastTrack));
                 if (!tracks.Any())
                 {
-                    Log.Warning("Tried to play a track from the theme " + theme + ", but none were appropriate right now. This theme requires more tracks.");
+                    Log.Warning("Tried to play a track from the theme, but none were appropriate right now. This theme requires more tracks.");
                     return false;
                 }
                 SongDef chosenTrack = tracks.RandomElementByWeight((TrackDef s) => s.commonality) as SongDef;

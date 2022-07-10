@@ -7,40 +7,15 @@ namespace MusicExpanded
 {
     public static class Utilities
     {
-        public static bool AppropriateNow(TrackDef track, SongDef lastPlayed)
+        public static TrackDef GetTrack(Cue cue, string name = null) => ThemeDef.TracksByCue(cue, name).RandomElementByWeight((TrackDef s) => s.commonality);
+        public static bool PlayTrack(Cue cue, string name = null) => PlayTrack(ThemeDef.TracksByCue(cue, name));
+        public static bool PlayTrack(IEnumerable<TrackDef> tracks)
         {
-            // Figure out if a track is appropriate right now.
-            // Map map = Find.AnyPlayerHomeMap ?? Find.CurrentMap;
-            if (
-                lastPlayed == track
-                || track.playOnCredits
-                || track.playOnMainMenu
-                || track.cue != Cue.None
-            ) return false;
-            return true;
-        }
-        public static ThemeDef GetTheme()
-        {
-            return DefDatabase<ThemeDef>.GetNamed(Core.selectedTheme);
-        }
-        public static TrackDef GetTrack(Cue cue, NamedPawn name = NamedPawn.None)
-        {
-            ThemeDef theme = GetTheme();
-            IEnumerable<TrackDef> tracks = theme.tracks.Where(track =>
-            {
-                return track.cue == cue && (name != NamedPawn.None || name == track.namedPawn);
-            });
-            return tracks.RandomElementByWeight((TrackDef s) => s.commonality);
-        }
-        public static void PlayTrack(Cue cue, NamedPawn name = NamedPawn.None)
-        {
-            TrackDef track = GetTrack(cue, name);
-            if (track == null)
-            {
-                Log.Warning("Tried to play cue'd track " + cue + " but none was found");
-                return;
-            }
+            if (!tracks.Any())
+                return false;
+            TrackDef track = tracks.RandomElementByWeight((TrackDef s) => s.commonality);
             Find.MusicManagerPlay.ForceStartSong(track as SongDef, false);
+            return true;
         }
         public static void ShowNowPlaying(SongDef song)
         {

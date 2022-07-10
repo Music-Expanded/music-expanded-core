@@ -8,10 +8,10 @@ namespace MusicExpanded
     {
         public static ThemeDef ActiveTheme => DefDatabase<ThemeDef>.GetNamed(Core.selectedTheme);
         public List<TrackDef> tracks;
-        public IEnumerable<TrackDef> TracksWithNamedColonist => tracks.Where(track => track.cue == Cue.StartWithNamedColonist);
-        public IEnumerable<TrackDef> TracksByCue(Cue cue, string name = null)
+        public static IEnumerable<TrackDef> TracksWithNamedColonist => ActiveTheme.tracks.Where(track => track.cue == Cue.StartWithNamedColonist);
+        public static IEnumerable<TrackDef> TracksByCue(Cue cue, string name = null)
         {
-            return tracks.Where(track =>
+            return ActiveTheme.tracks.Where(track =>
             {
                 return track.cue == cue && (!name.NullOrEmpty() || name == track.namedPawn);
             });

@@ -12,7 +12,7 @@ namespace MusicExpanded
         public bool playOnCredits = false;
         public bool vanillaLogic = false;
         public Cue cue = Cue.None;
-        public NamedPawn namedPawn;
+        public string namedPawn;
         public bool AppropriateNow(MusicManagerPlay manager, SongDef lastPlayed)
         {
             if (

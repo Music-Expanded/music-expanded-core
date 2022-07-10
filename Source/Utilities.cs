@@ -7,28 +7,28 @@ namespace MusicExpanded
 {
     public static class Utilities
     {
-        public static ThemeDef GetTheme()
+        public static TrackDef GetTrack(Cue cue, string name = null)
         {
-            return DefDatabase<ThemeDef>.GetNamed(Core.selectedTheme);
+            return ThemeDef.ActiveTheme.TracksByCue(cue, name).RandomElementByWeight((TrackDef s) => s.commonality);
         }
-        public static TrackDef GetTrack(Cue cue, NamedPawn name = NamedPawn.None)
-        {
-            ThemeDef theme = GetTheme();
-            IEnumerable<TrackDef> tracks = theme.tracks.Where(track =>
-            {
-                return track.cue == cue && (name != NamedPawn.None || name == track.namedPawn);
-            });
-            return tracks.RandomElementByWeight((TrackDef s) => s.commonality);
-        }
-        public static void PlayTrack(Cue cue, NamedPawn name = NamedPawn.None)
+        public static bool PlayTrack(Cue cue, string name = null)
         {
             TrackDef track = GetTrack(cue, name);
             if (track == null)
             {
                 Log.Warning("Tried to play cue'd track " + cue + " but none was found");
-                return;
+                return false;
             }
             Find.MusicManagerPlay.ForceStartSong(track as SongDef, false);
+            return true;
+        }
+        public static bool PlayTrack(IEnumerable<TrackDef> tracks)
+        {
+            if (!tracks.Any())
+                return false;
+            TrackDef track = tracks.RandomElementByWeight((TrackDef s) => s.commonality);
+            Find.MusicManagerPlay.ForceStartSong(track as SongDef, false);
+            return true;
         }
         public static void ShowNowPlaying(SongDef song)
         {

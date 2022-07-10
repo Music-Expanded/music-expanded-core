@@ -11,6 +11,11 @@ namespace MusicExpanded
         Credits,
         ManInBlack,
         LoneColonist,
-        StartWithNamedColonist
+        StartWithNamedColonist,
+        Betrayal,
+        SpaceBattle,
+        StartInGoldForest,
+        GiantPredatorHunt,
+        ExtremeDesertBattle,
     }
 }

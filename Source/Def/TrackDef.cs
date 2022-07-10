@@ -1,5 +1,7 @@
-﻿using RimWorld;
+﻿using HarmonyLib;
+using RimWorld;
 using System.Collections.Generic;
+using System.Reflection;
 using Verse;
 
 namespace MusicExpanded
@@ -13,6 +15,7 @@ namespace MusicExpanded
         public bool vanillaLogic = false;
         public Cue cue = Cue.None;
         public string namedPawn;
+        public static MethodInfo vanillaAppropriateNow = AccessTools.Method(typeof(RimWorld.MusicManagerPlay), "AppropriateNow");
         public bool AppropriateNow(MusicManagerPlay manager, SongDef lastPlayed)
         {
             if (
@@ -22,7 +25,7 @@ namespace MusicExpanded
                 return false;
 
             if (vanillaLogic)
-                return (bool)Patches.MusicManagerPlay.appropriateNow.Invoke(manager, new SongDef[] { this as SongDef });
+                return (bool)vanillaAppropriateNow.Invoke(manager, new SongDef[] { this as SongDef });
 
             return true;
         }

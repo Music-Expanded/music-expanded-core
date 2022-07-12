@@ -127,6 +127,14 @@
         <defName>ME_MedievalFantasy_WeShouldGiveThisPlaceAName</defName>
         <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - We Should Give This Place a Name</clipPath>
     </MusicExpanded.TrackDef>
+    <!-- Secret Tracks, not yet implemented -->
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Gold Forest</label>
+        <defName>ME_MedievalFantasy_GoldForest</defName>
+        <clipPath>MusicExpanded/Medieval/[Secret] Medieval_Fantasy_Scenario_Begin_Gold_Forest</clipPath>
+        <cue>StartInGoldForest</cue>
+    </MusicExpanded.TrackDef>
+
     <MusicExpanded.ThemeDef>
         <defName>ME_MedievalFantasy</defName>
         <tracks>

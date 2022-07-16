@@ -28,4 +28,13 @@
             </li>
         </value>
     </Operation>
+    <!-- Man In Black -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/IncidentDef[defName="AnimalInsanityMass"]</xpath>
+        <value>
+            <li Class="MusicExpanded.ModExtension.PlayCue">
+                <cue>AnimalInsanity</cue>
+            </li>
+        </value>
+    </Operation>
 </Patch>

@@ -15,7 +15,7 @@ namespace MusicExpanded
         Betrayal,
         SpaceBattle,
         StartInGoldForest,
-        AnimalInsanityMass,
+        AnimalInsanity,
         ExtremeDesertBattle,
     }
 }

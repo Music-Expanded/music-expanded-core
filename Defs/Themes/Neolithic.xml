@@ -119,7 +119,7 @@
         <label>Neolithic - Animal Insanity</label>
         <defName>ME_Neolithic_AnimalInsanity</defName>
         <clipPath>MusicExpanded/Neolithic/Rim Neolithic - [Secret Song] Any Giant Predator Is Hunted or Attacked</clipPath>
-        <cue>AnimalInsanityMass</cue>
+        <cue>AnimalInsanity</cue>
     </MusicExpanded.TrackDef>
     <!-- Secret Tracks, not yet implemented -->
     <MusicExpanded.TrackDef>

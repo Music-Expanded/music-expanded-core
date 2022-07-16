@@ -16,6 +16,7 @@ namespace MusicExpanded
         public Cue cue = Cue.None;
         public string namedPawn;
         public static MethodInfo vanillaAppropriateNow = AccessTools.Method(typeof(RimWorld.MusicManagerPlay), "AppropriateNow");
+        public bool IsBattleTrack => (cue <= Cue.BattleLegendary && cue >= Cue.BattleSmall);
         public bool AppropriateNow(MusicManagerPlay manager, SongDef lastPlayed)
         {
             if (

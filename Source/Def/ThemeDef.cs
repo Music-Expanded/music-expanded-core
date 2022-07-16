@@ -9,6 +9,7 @@ namespace MusicExpanded
         public static ThemeDef ActiveTheme => DefDatabase<ThemeDef>.GetNamed(Core.selectedTheme);
         public List<TrackDef> tracks;
         public static IEnumerable<TrackDef> TracksWithNamedColonist => ActiveTheme.tracks.Where(track => track.cue == Cue.StartWithNamedColonist);
+        public static TrackDef TrackByDefName(string defName) => ActiveTheme.tracks.Find(track => track.defName == defName);
         public static IEnumerable<TrackDef> TracksByCue(Cue cue, string name = null)
         {
             return ActiveTheme.tracks.Where(track =>

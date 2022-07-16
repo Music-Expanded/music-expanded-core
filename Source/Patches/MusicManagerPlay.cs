@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -14,6 +15,7 @@ namespace MusicExpanded.Patches
         public static FieldInfo gameObjectCreated = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "gameObjectCreated");
         public static FieldInfo forcedSong = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "forcedNextSong");
         public static FieldInfo lastStartedSong = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "lastStartedSong");
+        public static FieldInfo dangerMusicMode = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "DangerMusicMode");
         [HarmonyPatch(typeof(RimWorld.MusicManagerPlay), "ChooseNextSong")]
         class ChooseNextSong
         {
@@ -26,7 +28,27 @@ namespace MusicExpanded.Patches
                     return true;
                 }
                 SongDef lastTrack = MusicManagerPlay.lastStartedSong.GetValue(__instance) as SongDef;
-                IEnumerable<TrackDef> tracks = ThemeDef.ActiveTheme.tracks.Where(track => track.AppropriateNow(__instance, lastTrack));
+                IEnumerable<TrackDef> tracks = null;
+
+                // Battle track decay
+                if (lastTrack != null)
+                {
+                    TrackDef lastTrackAsTrackDef = ThemeDef.TrackByDefName(lastTrack.defName);
+                    if (lastTrackAsTrackDef != null && lastTrackAsTrackDef.IsBattleTrack)
+                    {
+                        System.Object dangerMusicMode = MusicManagerPlay.dangerMusicMode.GetValue(__instance);
+                        if ((bool)dangerMusicMode)
+                        {
+                            Cue battleCue = (Cue)Math.Max((int)lastTrackAsTrackDef.cue - 1, (int)Cue.BattleSmall);
+                            tracks = ThemeDef.TracksByCue(battleCue);
+                        }
+                    }
+                }
+
+                if (tracks == null || !tracks.Any())
+                {
+                    tracks = ThemeDef.ActiveTheme.tracks.Where(track => track.AppropriateNow(__instance, lastTrack));
+                }
                 if (!tracks.Any())
                 {
                     Log.Warning("Tried to play a track from the theme, but none were appropriate right now. This theme requires more tracks.");

@@ -115,13 +115,13 @@
         <defName>ME_Neolithic_WoodenWill</defName>
         <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Wooden Will (Feat. Jon Algar)</clipPath>
     </MusicExpanded.TrackDef>
-    <!-- Secret Tracks, not yet implemented -->
     <MusicExpanded.TrackDef>
-        <label>Neolithic - Giant Predator Hunt</label>
-        <defName>ME_Neolithic_GiantPredatorHunt</defName>
+        <label>Neolithic - Animal Insanity</label>
+        <defName>ME_Neolithic_AnimalInsanity</defName>
         <clipPath>MusicExpanded/Neolithic/Rim Neolithic - [Secret Song] Any Giant Predator Is Hunted or Attacked</clipPath>
-        <cue>GiantPredatorHunt</cue>
+        <cue>AnimalInsanity</cue>
     </MusicExpanded.TrackDef>
+    <!-- Secret Tracks, not yet implemented -->
     <MusicExpanded.TrackDef>
         <label>Neolithic - Extreme Desert Battle</label>
         <defName>ME_Neolithic_ExtremeDesertBattle</defName>
@@ -155,6 +155,7 @@
             <li>ME_Neolithic_TheRimWorld</li>
             <li>ME_Neolithic_TribalByNature</li>
             <li>ME_Neolithic_WoodenWill</li>
+            <li>ME_Neolithic_AnimalInsanity</li>
         </tracks>
     </MusicExpanded.ThemeDef>
 </Defs>

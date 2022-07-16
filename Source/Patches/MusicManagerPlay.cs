@@ -39,8 +39,9 @@ namespace MusicExpanded.Patches
                         Map map = Find.AnyPlayerHomeMap ?? Find.CurrentMap;
                         if (map.dangerWatcher.DangerRating == StoryDanger.High)
                         {
-                            Cue battleCue = (Cue)Math.Max((int)lastTrackAsTrackDef.cue - 1, (int)Cue.BattleSmall);
-                            tracks = ThemeDef.TracksByCue(battleCue);
+                            Cue battleCue = (Cue)(lastTrackAsTrackDef.cue - 1);
+                            if (battleCue != Cue.None)
+                                tracks = ThemeDef.TracksByCue(battleCue);
                         }
                     }
                 }

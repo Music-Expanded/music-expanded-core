@@ -15,7 +15,6 @@ namespace MusicExpanded.Patches
         public static FieldInfo gameObjectCreated = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "gameObjectCreated");
         public static FieldInfo forcedSong = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "forcedNextSong");
         public static FieldInfo lastStartedSong = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "lastStartedSong");
-        public static FieldInfo dangerMusicMode = AccessTools.Field(typeof(RimWorld.MusicManagerPlay), "DangerMusicMode");
         [HarmonyPatch(typeof(RimWorld.MusicManagerPlay), "ChooseNextSong")]
         class ChooseNextSong
         {
@@ -36,8 +35,9 @@ namespace MusicExpanded.Patches
                     TrackDef lastTrackAsTrackDef = ThemeDef.TrackByDefName(lastTrack.defName);
                     if (lastTrackAsTrackDef != null && lastTrackAsTrackDef.IsBattleTrack)
                     {
-                        System.Object dangerMusicMode = MusicManagerPlay.dangerMusicMode.GetValue(__instance);
-                        if ((bool)dangerMusicMode)
+
+                        Map map = Find.AnyPlayerHomeMap ?? Find.CurrentMap;
+                        if (map.dangerWatcher.DangerRating == StoryDanger.High)
                         {
                             Cue battleCue = (Cue)Math.Max((int)lastTrackAsTrackDef.cue - 1, (int)Cue.BattleSmall);
                             tracks = ThemeDef.TracksByCue(battleCue);

@@ -138,9 +138,62 @@
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - [Secret Song] Plays During Space Battle Ship Debris Falling Event</clipPath>
         <cue>SpaceBattle</cue>
     </MusicExpanded.TrackDef>
+    <!-- Sounds -->
+    <MusicExpanded.SoundDef>
+        <defName>ME_Glitterworld_Scenario_Begin</defName>
+        <replaces><li>GameStartSting</li></replaces>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>      
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MusicExpanded/Glitterworld/Glitterworld_Scenario_Begin</clipPath>
+                    </li>
+                </grains>      
+                <volumeRange>100~100</volumeRange>
+            </li>
+        </subSounds>
+    </MusicExpanded.SoundDef>
+    <MusicExpanded.SoundDef>
+        <defName>ME_Glitterworld_Quest_Complete</defName>
+        <replaces><li>Quest_Succeded</li></replaces>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>      
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MusicExpanded/Glitterworld/Glitterworld_Quest_Complete</clipPath>
+                    </li>
+                </grains>      
+                <volumeRange>100~100</volumeRange>
+            </li>
+        </subSounds>
+    </MusicExpanded.SoundDef>
+    <MusicExpanded.SoundDef>
+        <defName>ME_Glitterworld_Invasion_Alert</defName>
+        <replaces>
+            <li>LetterArrive_BadUrgent</li>
+            <li>LetterArrive_BadUrgentSmall</li>
+            <li>LetterArrive_BadUrgentBig</li>
+        </replaces>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>      
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MusicExpanded/Glitterworld/Glitterworld_Invasion_Alert</clipPath>
+                    </li>
+                </grains>      
+                <volumeRange>100~100</volumeRange>
+            </li>
+        </subSounds>
+    </MusicExpanded.SoundDef>
 
     <MusicExpanded.ThemeDef>
         <defName>ME_Glitterworld</defName>
+        <sounds>
+            <li>ME_Glitterworld_Scenario_Begin</li>
+        </sounds>
         <tracks>
             <li>ME_Glitterworld_StartWithOdeum</li>
             <li>ME_Shared_ManInBlack</li>

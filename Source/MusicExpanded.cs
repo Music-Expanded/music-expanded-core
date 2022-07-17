@@ -1,3 +1,5 @@
+using System.Linq;
+using HarmonyLib;
 using HugsLib;
 using HugsLib.Settings;
 using Verse;
@@ -15,18 +17,18 @@ namespace MusicExpanded
                 "ME_Theme".Translate(),
                 "ME_ThemeDescription".Translate(),
                 "ME_Glitterworld",
-                (string value) =>
-                {
-                    // Validates that there is a ThemeDef that exists with this defName
-                    return DefDatabase<ThemeDef>.GetNamedSilentFail(value) != null;
-                }
+                (string value) => DefDatabase<ThemeDef>.GetNamedSilentFail(value) != null
             );
+
             showNowPlaying = Settings.GetHandle<bool>(
                 "showNowPlaying",
                 "ME_ShowNowPlaying".Translate(),
                 "ME_ShowNowPlayingDescription".Translate(),
                 true
             );
+
+            selectedTheme.ValueChanged += (handle) => ThemeDef.ResolveSounds();
+            ThemeDef.ResolveSounds();
         }
     }
 }

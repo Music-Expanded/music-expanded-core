@@ -189,6 +189,7 @@
 
     <MusicExpanded.ThemeDef>
         <defName>ME_Glitterworld</defName>
+        <description>Digital music rooted in the sounds of science fiction. While the mythos of Rimworld paints Glitterworlds like a Utopia, think of this soundtrack more like Sci-fi Western... with much less Western. If you constantly use Androids, this might be the theme for you.</description>
         <sounds>
             <li>ME_Glitterworld_Scenario_Begin</li>
             <li>ME_Glitterworld_Invasion_Alert</li>

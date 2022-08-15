@@ -131,6 +131,8 @@
     
     <MusicExpanded.ThemeDef>
         <defName>ME_Neolithic</defName>
+        <label>Music Expanded: Neolithic</label>
+        <description>A fairly self explanatory musical theme. For those that like to start at the lowest tech tier and for those that like to stay there; this is tribal, earthy music meant to evoke an entirely different vibe than the Original Soundtrack.</description>
         <tracks>
             <li>ME_Shared_ManInBlack</li>
             <li>ME_Neolithic_AfterHisDeath</li>

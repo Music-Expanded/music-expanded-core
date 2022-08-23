@@ -138,6 +138,7 @@
     <MusicExpanded.ThemeDef>
         <defName>ME_MedievalFantasy</defName>
         <label>Music Expanded: Medieval</label>
+		<iconPath>UI/Icons/Medieval</iconPath>
         <description>Your Kingdom awaits my lord... remember those? Anyway. Ehm. Your Kingdom DOES await in this theme. This is sweeping orchestral music in an attempt to assist with Medieval/Fantasy play-throughs. Expect grandiose vocal epics and the occasional playful bard-like acoustic adventure.</description>
         <tracks>
             <li>ME_Shared_ManInBlack</li>

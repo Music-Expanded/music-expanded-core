@@ -1,125 +1,125 @@
 <Defs>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Aurora Borealis</label>
+        <label>Glitterworld - Aurora Borealis</label>
         <defName>ME_Glitterworld_AuroraBorealis</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Aurora Borealis</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Blue Ruins</label>
+        <label>Glitterworld - Blue Ruins</label>
         <defName>ME_Glitterworld_BlueRuins</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Blue Ruins</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Chrome Gestalt</label>
+        <label>Glitterworld - Chrome Gestalt</label>
         <defName>ME_Glitterworld_ChromeGestalt</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Chrome Gestalt</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Circles</label>
+        <label>Glitterworld - Circles</label>
         <defName>ME_Glitterworld_Circles</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Circles</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Credits</label>
+        <label>Glitterworld - Credits</label>
         <defName>ME_Glitterworld_Credits</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Credits</clipPath>
         <cue>Credits</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Defense</label>
+        <label>Glitterworld - Defense</label>
         <defName>ME_Glitterworld_Defense</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Defense</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Everything, Anything</label>
+        <label>Glitterworld - Everything, Anything</label>
         <defName>ME_Glitterworld_EverythingAnything</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Everything, Anything</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Follow Me</label>
+        <label>Glitterworld - Follow Me</label>
         <defName>ME_Glitterworld_FollowMe</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Follow Me</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Glass</label>
+        <label>Glitterworld - Glass</label>
         <defName>ME_Glitterworld_Glass</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Glass</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Great Nothing</label>
+        <label>Glitterworld - Great Nothing</label>
         <defName>ME_Glitterworld_GreatNothing</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Great Nothing</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Holding Hands</label>
+        <label>Glitterworld - Holding Hands</label>
         <defName>ME_Glitterworld_HoldingHands</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Holding Hands</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Large Battle (Feat. Parker Mann)</label>
+        <label>Glitterworld - Large Battle (Feat. Parker Mann)</label>
         <defName>ME_Glitterworld_LargeBattle</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Large Battle (Feat. Parker Mann)</clipPath>
         <cue>BattleLarge</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Legendary Battle</label>
+        <label>Glitterworld - Legendary Battle</label>
         <defName>ME_Glitterworld_LegendaryBattle</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Legendary Battle</clipPath>
         <cue>BattleLegendary</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Medium Battle</label>
+        <label>Glitterworld - Medium Battle</label>
         <defName>ME_Glitterworld_MediumBattle</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Medium Battle</clipPath>
         <cue>BattleMedium</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Menu Music</label>
+        <label>Glitterworld - Menu Music</label>
         <defName>ME_Glitterworld_MenuMusic</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Menu Music</clipPath>
         <cue>MainMenu</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Silver City Ruins</label>
+        <label>Glitterworld - Silver City Ruins</label>
         <defName>ME_Glitterworld_SilverCityRuins</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Silver City Ruins</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Small Battle</label>
+        <label>Glitterworld - Small Battle</label>
         <defName>ME_Glitterworld_SmallBattle</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Small Battle</clipPath>
         <cue>BattleSmall</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Society</label>
+        <label>Glitterworld - Society</label>
         <defName>ME_Glitterworld_Society</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Society</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Sunday at the Hydroponics</label>
+        <label>Glitterworld - Sunday at the Hydroponics</label>
         <defName>ME_Glitterworld_SundayAtTheHydroponics</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Sunday at the Hydroponics</clipPath>
     </MusicExpanded.TrackDef>
     <!-- Doesn't seem to like m4a -->
     <!-- <MusicExpanded.TrackDef>
-        <label>Glitterword - Time Moves Slow</label>
+        <label>Glitterworld - Time Moves Slow</label>
         <defName>ME_Glitterworld_TimeMovesSlow</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Time Moves Slow</clipPath>
     </MusicExpanded.TrackDef> -->
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Utopia</label>
+        <label>Glitterworld - Utopia</label>
         <defName>ME_Glitterworld_Utopia</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Utopia</clipPath>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - We Don't Take Kindly (Feat. Yi Nantiro)</label>
+        <label>Glitterworld - We Don't Take Kindly (Feat. Yi Nantiro)</label>
         <defName>ME_Glitterworld_WeDontTakeKindly</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - We Don't Take Kindly (Feat. Yi Nantiro)</clipPath>
     </MusicExpanded.TrackDef>
 
     <!-- Secret Tracks -->
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Odeum's Song</label>
+        <label>Glitterworld - Odeum's Song</label>
         <defName>ME_Glitterworld_StartWithOdeum</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - [Secret Song] Start Colony With a Pawn Named Odeum</clipPath>
         <cue>StartWithNamedColonist</cue>
@@ -127,13 +127,13 @@
     </MusicExpanded.TrackDef>
     <!-- Not yet implemented -->
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Betrayal</label>
+        <label>Glitterworld - Betrayal</label>
         <defName>ME_Glitterworld_Betrayal</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - [Secret Song] Traitor Event, Guests Betray Hosts Event</clipPath>
         <cue>Betrayal</cue>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
-        <label>Glitterword - Space Battle</label>
+        <label>Glitterworld - Space Battle</label>
         <defName>ME_Glitterworld_SpaceBattle</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - [Secret Song] Plays During Space Battle Ship Debris Falling Event</clipPath>
         <cue>SpaceBattle</cue>
@@ -189,6 +189,8 @@
 
     <MusicExpanded.ThemeDef>
         <defName>ME_Glitterworld</defName>
+		<label>Music Expanded: Glitterworld</label>
+		<iconPath>UI/Icons/Glitterworld</iconPath>
         <description>Digital music rooted in the sounds of science fiction. While the mythos of Rimworld paints Glitterworlds like a Utopia, think of this soundtrack more like Sci-fi Western... with much less Western. If you constantly use Androids, this might be the theme for you.</description>
         <sounds>
             <li>ME_Glitterworld_Scenario_Begin</li>

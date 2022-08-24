@@ -9,7 +9,7 @@ namespace MusicExpanded
 {
     public class ThemeDef : Def
     {
-        public static ThemeDef ActiveTheme => DefDatabase<ThemeDef>.GetNamed(Core.selectedTheme);
+        public static ThemeDef ActiveTheme => DefDatabase<ThemeDef>.GetNamed(Core.mod.settings.selectedTheme);
         public List<TrackDef> tracks;
         public List<SoundDef> sounds = new List<SoundDef>();
         public string iconPath;

@@ -1,66 +1,86 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
 using HugsLib;
 using HugsLib.Settings;
+using RimWorld;
 using UnityEngine;
 using Verse;
 
 namespace MusicExpanded
 {
-    public class Core : ModBase
+
+    public class MESettings : ModSettings
     {
-        public static SettingHandle<string> selectedTheme;
-        public static SettingHandle<bool> showNowPlaying;
+        public string selectedTheme = "ME_Glitterworld";
+        public bool showNowPlaying = true;
+
+        public override void ExposeData()
+        {
+            Scribe_Values.Look(ref selectedTheme, "selectedTheme", "ME_Glitterworld");
+            Scribe_Values.Look(ref showNowPlaying, "showNowPlaying", true);
+
+        }
+    }
+
+
+    public class Core : Mod
+    {
+
+        public MESettings settings;
+        public static Core mod;
         private static Vector2 scrollPosition = Vector2.zero;
         private static float viewHeight;
 
-        public override void DefsLoaded()
+        public Core(ModContentPack content) : base(content)
         {
-
-            showNowPlaying = Settings.GetHandle<bool>(
-                "showNowPlaying",
-                "ME_ShowNowPlaying".Translate(),
-                "ME_ShowNowPlayingDescription".Translate(),
-                true
-            );
-
-            selectedTheme.CustomDrawerHeight = 480f;
-            selectedTheme.CustomDrawerFullWidth = rect => { return ThemeSelectScrollWindow(rect); };
-
-            //selectedTheme = Settings.GetHandle<string>(
-            //    "selectedTheme",
-            //    "ME_Theme".Translate(),
-            //    "ME_ThemeDescription".Translate(),
-            //    "ME_Glitterworld",
-            //    (string value) => DefDatabase<ThemeDef>.GetNamedSilentFail(value) != null
-            //);
-
-            selectedTheme.ValueChanged += (handle) => ThemeDef.ResolveSounds();
-            ThemeDef.ResolveSounds();
+            this.settings = GetSettings<MESettings>();
+            mod = this;
         }
-
-        private bool ThemeSelectScrollWindow(Rect rect)
+        public override string SettingsCategory()
         {
+            return "ME_MusicExpanded".Translate();
+        }
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+
+            Listing_Standard outerListing = new Listing_Standard();
+            outerListing.Begin(inRect);
+            Listing_Standard checkboxListing = new Listing_Standard();
+            Rect checkboxRect = outerListing.GetRect(30f).LeftHalf();
+            checkboxListing.Begin(checkboxRect);
+            checkboxListing.CheckboxLabeled("ME_ShowNowPlaying".Translate(), ref Core.mod.settings.showNowPlaying, "ME_ShowNowPlayingDescription".Translate());
+            checkboxListing.End();
+
             List<ThemeDef> themes = DefDatabase<ThemeDef>.AllDefs.ToList();
-            float entryHeight = 100f;
-            viewHeight = entryHeight * themes.Count();
+
+            // The height of individual ThemeDef entries. 
+            float entryHeight = 140f;
+            viewHeight = entryHeight * themes.Count() + 40f; 
+
+            Rect viewRect = new Rect(0f, 0f, inRect.width - 18f, viewHeight);
+            Widgets.BeginScrollView(inRect, ref scrollPosition, viewRect, true);
+
             Listing_Standard listing = new Listing_Standard();
-            listing.Begin(rect);
+            listing.Begin(viewRect);
             foreach (ThemeDef theme in themes)
             {
-                if (ThemeWidget(theme, listing.GetRect(entryHeight))) ;
-                {
-                    return true;
-                }
+                ThemeWidget(theme, listing.GetRect(entryHeight));
             }
+
             listing.End();
-            return false;
+            Widgets.EndScrollView();
+
+            outerListing.End();
+
         }
-        private bool ThemeWidget(ThemeDef themeDef, Rect mainRect)
+
+
+        private void ThemeWidget(ThemeDef themeDef, Rect mainRect)
         {
             float height = mainRect.height;
-            if (themeDef.defName == selectedTheme.StringValue)
+            if (themeDef.defName == Core.mod.settings.selectedTheme)
             {
                 Widgets.DrawHighlight(mainRect);
             }
@@ -76,7 +96,7 @@ namespace MusicExpanded
             if (!themeDef.iconPath.NullOrEmpty())
             {
                 Texture2D icon = ContentFinder<Texture2D>.Get(themeDef.iconPath, true);
-                Widgets.DrawTextureFitted(iconRect, icon, height / icon.height);
+                Widgets.DrawTextureFitted(iconRect, icon, 1);
             }
 
             Listing_Standard textListing = new Listing_Standard();
@@ -86,18 +106,18 @@ namespace MusicExpanded
             textListing.Label(themeDef.label);
             Text.Font = GameFont.Small;
             textListing.Label(themeDef.description);
-            Rect selectButtonRect = textListing.GetRect(30f).LeftHalf();
+
+            Rect selectButtonRect = textListing.GetRect(30f).LeftPartPixels(150f);
+
             Listing_Standard selectButtonListing = new Listing_Standard();
             selectButtonListing.Begin(selectButtonRect);
-            if (selectButtonListing.ButtonText("Select")) ;
+            if (selectButtonListing.ButtonText("ME_SelectTheme".Translate())) 
             {
-                string defName = themeDef.defName;
-                selectedTheme.Value = themeDef.defName;
-                return true;
+                Core.mod.settings.selectedTheme = themeDef.defName;
             }
             selectButtonListing.End();
+
             textListing.End();
-            return false;
         }
 
 

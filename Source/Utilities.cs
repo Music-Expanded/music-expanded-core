@@ -19,7 +19,7 @@ namespace MusicExpanded
         }
         public static void ShowNowPlaying(SongDef song)
         {
-            if (Core.showNowPlaying)
+            if (Core.mod.settings.showNowPlaying)
                 Messages.Message("ME_NowPlaying".Translate(song.label).ToString(), null, MessageTypeDefOf.NeutralEvent, null, false);
         }
         public static Cue BattleCue(float points)

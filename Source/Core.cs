@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using HarmonyLib;
 using UnityEngine;
 using Verse;
 
@@ -14,6 +16,8 @@ namespace MusicExpanded
         public Core(ModContentPack content) : base(content)
         {
             settings = GetSettings<Settings>();
+            var inst = new Harmony("MusicExpanded.Core");
+            inst.PatchAll(Assembly.GetExecutingAssembly());
         }
         public override string SettingsCategory()
         {
@@ -89,6 +93,7 @@ namespace MusicExpanded
             selectButtonListing.Begin(selectButtonRect);
             if (selectButtonListing.ButtonText("ME_SelectTheme".Translate()))
             {
+                Log.Message("Switching themes?");
                 settings.selectedTheme = themeDef.defName;
                 ThemeDef.ResolveSounds();
             }

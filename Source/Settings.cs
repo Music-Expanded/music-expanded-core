@@ -13,7 +13,6 @@ namespace MusicExpanded
         {
             Scribe_Values.Look(ref selectedTheme, "selectedTheme", "ME_Glitterworld");
             Scribe_Values.Look(ref showNowPlaying, "showNowPlaying", true);
-
         }
     }
 }

@@ -7,6 +7,8 @@ using Verse;
 
 namespace MusicExpanded
 {
+
+    [StaticConstructorOnStartup]
     public class Core : Mod
     {
         public static Settings settings;
@@ -16,8 +18,8 @@ namespace MusicExpanded
         public Core(ModContentPack content) : base(content)
         {
             settings = GetSettings<Settings>();
-            var inst = new Harmony("MusicExpanded.Core");
-            inst.PatchAll(Assembly.GetExecutingAssembly());
+            var harmony = new Harmony("musicexpanded.core");
+            harmony.PatchAll(Assembly.GetCallingAssembly());
         }
         public override string SettingsCategory()
         {

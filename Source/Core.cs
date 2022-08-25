@@ -1,42 +1,19 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using HarmonyLib;
-using HugsLib;
-using HugsLib.Settings;
-using RimWorld;
 using UnityEngine;
 using Verse;
 
 namespace MusicExpanded
 {
-
-    public class MESettings : ModSettings
-    {
-        public string selectedTheme = "ME_Glitterworld";
-        public bool showNowPlaying = true;
-
-        public override void ExposeData()
-        {
-            Scribe_Values.Look(ref selectedTheme, "selectedTheme", "ME_Glitterworld");
-            Scribe_Values.Look(ref showNowPlaying, "showNowPlaying", true);
-
-        }
-    }
-
-
     public class Core : Mod
     {
-
-        public MESettings settings;
-        public static Core mod;
+        public static Settings settings;
         private static Vector2 scrollPosition = Vector2.zero;
         private static float viewHeight;
 
         public Core(ModContentPack content) : base(content)
         {
-            this.settings = GetSettings<MESettings>();
-            mod = this;
+            settings = GetSettings<Settings>();
         }
         public override string SettingsCategory()
         {
@@ -50,14 +27,14 @@ namespace MusicExpanded
             Listing_Standard checkboxListing = new Listing_Standard();
             Rect checkboxRect = outerListing.GetRect(30f).LeftHalf();
             checkboxListing.Begin(checkboxRect);
-            checkboxListing.CheckboxLabeled("ME_ShowNowPlaying".Translate(), ref Core.mod.settings.showNowPlaying, "ME_ShowNowPlayingDescription".Translate());
+            checkboxListing.CheckboxLabeled("ME_ShowNowPlaying".Translate(), ref settings.showNowPlaying, "ME_ShowNowPlayingDescription".Translate());
             checkboxListing.End();
 
             List<ThemeDef> themes = DefDatabase<ThemeDef>.AllDefs.ToList();
 
             // The height of individual ThemeDef entries. 
             float entryHeight = 140f;
-            viewHeight = entryHeight * themes.Count() + 40f; 
+            viewHeight = entryHeight * themes.Count() + 40f;
 
             Rect viewRect = new Rect(0f, 0f, inRect.width - 18f, viewHeight);
             Widgets.BeginScrollView(inRect, ref scrollPosition, viewRect, true);
@@ -76,11 +53,10 @@ namespace MusicExpanded
 
         }
 
-
         private void ThemeWidget(ThemeDef themeDef, Rect mainRect)
         {
             float height = mainRect.height;
-            if (themeDef.defName == Core.mod.settings.selectedTheme)
+            if (themeDef.defName == settings.selectedTheme)
             {
                 Widgets.DrawHighlight(mainRect);
             }
@@ -111,16 +87,15 @@ namespace MusicExpanded
 
             Listing_Standard selectButtonListing = new Listing_Standard();
             selectButtonListing.Begin(selectButtonRect);
-            if (selectButtonListing.ButtonText("ME_SelectTheme".Translate())) 
+            if (selectButtonListing.ButtonText("ME_SelectTheme".Translate()))
             {
-                Core.mod.settings.selectedTheme = themeDef.defName;
+                settings.selectedTheme = themeDef.defName;
+                ThemeDef.ResolveSounds();
             }
             selectButtonListing.End();
 
             textListing.End();
         }
-
-
 
     }
 }

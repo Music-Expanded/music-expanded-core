@@ -92,11 +92,7 @@ namespace MusicExpanded
             Listing_Standard selectButtonListing = new Listing_Standard();
             selectButtonListing.Begin(selectButtonRect);
             if (selectButtonListing.ButtonText("ME_SelectTheme".Translate()))
-            {
-                Log.Message("Switching themes?");
-                settings.selectedTheme = themeDef.defName;
-                ThemeDef.ResolveSounds();
-            }
+                ThemeDef.Select(themeDef);
             selectButtonListing.End();
 
             textListing.End();

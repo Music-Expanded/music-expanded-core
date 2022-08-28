@@ -27,11 +27,18 @@ namespace MusicExpanded
         {
             Core.settings.selectedTheme = theme.defName;
             ThemeDef.ResolveSounds();
-            MusicManagerPlay manager = Find.MusicManagerPlay;
-            if (manager != null && manager.IsPlaying)
+
+            try
             {
-                Log.Message("Starting a new Song!");
-                Patches.MusicManagerPlay.startNewSong.Invoke(manager, null);
+                MusicManagerPlay manager = Find.MusicManagerPlay;
+                if (manager != null && manager.IsPlaying)
+                {
+                    Patches.MusicManagerPlay.startNewSong.Invoke(manager, null);
+                }
+            }
+            catch
+            {
+                // Couldn't start track, but this is fine.
             }
         }
         public static void ResolveSounds(ThemeDef theme = null)

@@ -116,6 +116,12 @@
         <defName>ME_Glitterworld_WeDontTakeKindly</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - We Don't Take Kindly (Feat. Yi Nantiro)</clipPath>
     </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Glitterworld - Space Battle</label>
+        <defName>ME_Glitterworld_SpaceBattle</defName>
+        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - [Secret Song] Plays During Space Battle Ship Debris Falling Event</clipPath>
+        <cue>SpaceBattle</cue>
+    </MusicExpanded.TrackDef>
 
     <!-- Secret Tracks -->
     <MusicExpanded.TrackDef>
@@ -131,12 +137,6 @@
         <defName>ME_Glitterworld_Betrayal</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - [Secret Song] Traitor Event, Guests Betray Hosts Event</clipPath>
         <cue>Betrayal</cue>
-    </MusicExpanded.TrackDef>
-    <MusicExpanded.TrackDef>
-        <label>Glitterworld - Space Battle</label>
-        <defName>ME_Glitterworld_SpaceBattle</defName>
-        <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - [Secret Song] Plays During Space Battle Ship Debris Falling Event</clipPath>
-        <cue>SpaceBattle</cue>
     </MusicExpanded.TrackDef>
     <!-- Sounds -->
     <MusicExpanded.SoundDef>

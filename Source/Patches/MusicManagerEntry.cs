@@ -9,11 +9,13 @@ namespace MusicExpanded.Patches
     public class MusicManagerEntry
     {
         public static FieldInfo audioSourceField = AccessTools.Field(typeof(RimWorld.MusicManagerEntry), "audioSource");
+        public static MethodInfo startPlaying = AccessTools.Method(typeof(RimWorld.MusicManagerEntry), "StartPlaying");
         [HarmonyPatch(typeof(RimWorld.MusicManagerEntry), "StartPlaying")]
         class StartPlaying
         {
             static bool Prefix(RimWorld.MusicManagerEntry __instance)
             {
+                ThemeDef.ResolveSounds();
                 AudioSource audioSource = audioSourceField.GetValue(__instance) as AudioSource;
                 if (audioSource != null && !audioSource.isPlaying)
                 {

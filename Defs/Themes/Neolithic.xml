@@ -129,11 +129,64 @@
         <cue>ExtremeDesertBattle</cue>
     </MusicExpanded.TrackDef>
     
+    <!-- Sounds -->
+    <MusicExpanded.SoundDef>
+        <defName>ME_Neolithic_Scenario_Begin</defName>
+        <replaces><li>GameStartSting</li></replaces>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>      
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MusicExpanded/Neolithic/Neolithic_Scenario_Begin</clipPath>
+                    </li>
+                </grains>      
+                <volumeRange>100~100</volumeRange>
+            </li>
+        </subSounds>
+    </MusicExpanded.SoundDef>
+    <MusicExpanded.SoundDef>
+        <defName>ME_Neolithic_Quest_Complete</defName>
+        <replaces><li>Quest_Succeded</li></replaces>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>      
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MusicExpanded/Neolithic/Neolithic_Quest_Complete</clipPath>
+                    </li>
+                </grains>      
+                <volumeRange>100~100</volumeRange>
+            </li>
+        </subSounds>
+    </MusicExpanded.SoundDef>
+    <MusicExpanded.SoundDef>
+        <defName>ME_Neolithic_Invasion_Alert</defName>
+        <replaces><li>LetterArrive_BadUrgentBig</li></replaces>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>      
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MusicExpanded/Neolithic/Neolithic_Invasion_Alert</clipPath>
+                    </li>
+                </grains>      
+                <volumeRange>100~100</volumeRange>
+            </li>
+        </subSounds>
+    </MusicExpanded.SoundDef>
+
+
     <MusicExpanded.ThemeDef>
         <defName>ME_Neolithic</defName>
         <label>Music Expanded: Neolithic</label>
 		<iconPath>UI/Icons/Neolithic</iconPath>
         <description>A fairly self explanatory musical theme. For those that like to start at the lowest tech tier and for those that like to stay there; this is tribal, earthy music meant to evoke an entirely different vibe than the Original Soundtrack.</description>
+        <sounds>
+            <li>ME_Neolithic_Scenario_Begin</li>
+            <li>ME_Neolithic_Quest_Complete</li>
+            <li>ME_Neolithic_Invasion_Alert</li>
+        </sounds>
         <tracks>
             <li>ME_Shared_ManInBlack</li>
             <li>ME_Neolithic_AfterHisDeath</li>

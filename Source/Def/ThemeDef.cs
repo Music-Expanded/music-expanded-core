@@ -2,6 +2,7 @@
 using System.Linq;
 using HarmonyLib;
 using RimWorld;
+using UnityEngine;
 using Verse;
 using Verse.Sound;
 
@@ -27,11 +28,27 @@ namespace MusicExpanded
         {
             Core.settings.selectedTheme = theme.defName;
             ThemeDef.ResolveSounds();
-            MusicManagerPlay manager = Find.MusicManagerPlay;
-            if (manager != null && manager.IsPlaying)
+
+            try
             {
-                Log.Message("Starting a new Song!");
-                Patches.MusicManagerPlay.startNewSong.Invoke(manager, null);
+                MusicManagerPlay manager = Find.MusicManagerPlay;
+                if (manager != null && manager.IsPlaying)
+                {
+                    Patches.MusicManagerPlay.startNewSong.Invoke(manager, null);
+                }
+            }
+            catch
+            {
+                MusicManagerEntry manager = Find.MusicManagerEntry;
+                AudioSource audioSource = Patches.MusicManagerEntry.audioSourceField.GetValue(manager) as AudioSource;
+
+                SongDef menuSong = Utilities.GetTrack(Cue.MainMenu) as SongDef;
+                if (menuSong == null)
+                    menuSong = SongDefOf.EntrySong;
+
+                audioSource.clip = menuSong.clip;
+
+                Patches.MusicManagerEntry.startPlaying.Invoke(manager, null);
             }
         }
         public static void ResolveSounds(ThemeDef theme = null)
@@ -43,6 +60,7 @@ namespace MusicExpanded
             {
                 SoundDef expandedSound = theme.sounds.Find(sound => sound.replaces.Contains(vanillaSound));
                 if (expandedSound == null) continue;
+                Log.Message("Replacing " + vanillaSound.defName);
                 vanillaSubSounds.SetOrAdd(vanillaSound.defName, vanillaSound.subSounds);
                 vanillaSound.subSounds = expandedSound.subSounds;
                 vanillaSound.ResolveReferences();

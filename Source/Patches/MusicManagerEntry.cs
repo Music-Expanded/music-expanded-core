@@ -15,6 +15,7 @@ namespace MusicExpanded.Patches
         {
             static bool Prefix(RimWorld.MusicManagerEntry __instance)
             {
+                ThemeDef.ResolveSounds();
                 AudioSource audioSource = audioSourceField.GetValue(__instance) as AudioSource;
                 if (audioSource != null && !audioSource.isPlaying)
                 {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using HarmonyLib;
+using RimWorld;
 using Verse;
 using Verse.Sound;
 
@@ -23,6 +23,17 @@ namespace MusicExpanded
             });
         }
         private static Dictionary<string, List<SubSoundDef>> vanillaSubSounds = new Dictionary<string, List<SubSoundDef>>();
+        public static void Select(ThemeDef theme)
+        {
+            Core.settings.selectedTheme = theme.defName;
+            ThemeDef.ResolveSounds();
+            MusicManagerPlay manager = Find.MusicManagerPlay;
+            if (manager != null && manager.IsPlaying)
+            {
+                Log.Message("Starting a new Song!");
+                Patches.MusicManagerPlay.startNewSong.Invoke(manager, null);
+            }
+        }
         public static void ResolveSounds(ThemeDef theme = null)
         {
             if (theme == null) theme = ActiveTheme;

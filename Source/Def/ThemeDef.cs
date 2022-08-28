@@ -2,6 +2,7 @@
 using System.Linq;
 using HarmonyLib;
 using RimWorld;
+using UnityEngine;
 using Verse;
 using Verse.Sound;
 
@@ -38,7 +39,16 @@ namespace MusicExpanded
             }
             catch
             {
-                // Couldn't start track, but this is fine.
+                MusicManagerEntry manager = Find.MusicManagerEntry;
+                AudioSource audioSource = Patches.MusicManagerEntry.audioSourceField.GetValue(manager) as AudioSource;
+
+                SongDef menuSong = Utilities.GetTrack(Cue.MainMenu) as SongDef;
+                if (menuSong == null)
+                    menuSong = SongDefOf.EntrySong;
+
+                audioSource.clip = menuSong.clip;
+
+                Patches.MusicManagerEntry.startPlaying.Invoke(manager, null);
             }
         }
         public static void ResolveSounds(ThemeDef theme = null)

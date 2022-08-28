@@ -9,6 +9,7 @@ namespace MusicExpanded.Patches
     public class MusicManagerEntry
     {
         public static FieldInfo audioSourceField = AccessTools.Field(typeof(RimWorld.MusicManagerEntry), "audioSource");
+        public static MethodInfo startPlaying = AccessTools.Method(typeof(RimWorld.MusicManagerEntry), "StartPlaying");
         [HarmonyPatch(typeof(RimWorld.MusicManagerEntry), "StartPlaying")]
         class StartPlaying
         {

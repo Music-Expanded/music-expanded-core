@@ -8,14 +8,13 @@
         <li>1.3</li>
     </supportedVersions>
     <loadAfter>
-        <li>brrainz.harmony</li>
+        <li>musicexpanded.framework</li>
     </loadAfter>
-    <modDependencies>        
+    <modDependencies>
         <li>
-            <packageId>brrainz.harmony</packageId>
-            <displayName>Harmony</displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+            <packageId>musicexpanded.framework</packageId>
+            <displayName>Music Expanded Framework</displayName>
+            <downloadUrl>https://github.com/Music-Expanded/music-expanded-framework/releases/latest</downloadUrl>
         </li>
     </modDependencies>
 </ModMetaData>

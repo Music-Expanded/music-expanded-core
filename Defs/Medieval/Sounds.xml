@@ -1,0 +1,47 @@
+<Defs>
+    <MusicExpanded.SoundDef>
+        <defName>ME_Medieval_Scenario_Begin</defName>
+        <replaces><li>GameStartSting</li></replaces>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>      
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MusicExpanded/Medieval/Medieval_Fantasy_Scenario_Begin</clipPath>
+                    </li>
+                </grains>      
+                <volumeRange>100~100</volumeRange>
+            </li>
+        </subSounds>
+    </MusicExpanded.SoundDef>
+    <MusicExpanded.SoundDef>
+        <defName>ME_Medieval_Quest_Complete</defName>
+        <replaces><li>Quest_Succeded</li></replaces>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>      
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MusicExpanded/Medieval/Medieval_Fantasy_Quest_Complete</clipPath>
+                    </li>
+                </grains>      
+                <volumeRange>100~100</volumeRange>
+            </li>
+        </subSounds>
+    </MusicExpanded.SoundDef>
+    <MusicExpanded.SoundDef>
+        <defName>ME_Medieval_Invasion_Alert</defName>
+        <replaces><li>LetterArrive_BadUrgentBig</li></replaces>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>      
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MusicExpanded/Medieval/Medieval_Fantasy_Invasion_Alert</clipPath>
+                    </li>
+                </grains>      
+                <volumeRange>100~100</volumeRange>
+            </li>
+        </subSounds>
+    </MusicExpanded.SoundDef>
+</Defs>

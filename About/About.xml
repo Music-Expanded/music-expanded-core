@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ModMetaData>
     <name>Music Expanded Core</name>
-    <description>TODO</description>
-    <author>TODO</author>
+    <description><![CDATA[This is free music for players to use alongside their favorite major overhauls / themes. 
+
+Enjoy a bare bones Neolithic play style? Now you have a new soundtrack to immerse yourself further into the role play!
+
+If you're like me and you use Androids and Glitterworld mods to make it as Sci-fi as possible, now we have a Glitterworld soundtrack!
+
+Maybe you're going to stream a Fantasy playthrough on Twitch... you can play the Medieval / Fantasy soundtrack without worrying about copyright claims.]]>
+    </description>
+    <author>JME, Caaz, Odeum, Pphhyy the great, Zylle</author>
     <packageId>musicexpanded.core</packageId>
     <supportedVersions>
         <li>1.3</li>

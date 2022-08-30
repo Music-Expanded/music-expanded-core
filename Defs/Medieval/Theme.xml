@@ -1,0 +1,44 @@
+<Defs>
+    <MusicExpanded.ThemeDef>
+        <defName>ME_MedievalFantasy</defName>
+        <label>Music Expanded: Medieval</label>
+		<iconPath>UI/Icons/Medieval</iconPath>
+        <description>Your Kingdom awaits my lord... remember those? Anyway. Ehm. Your Kingdom DOES await in this theme. This is sweeping orchestral music in an attempt to assist with Medieval/Fantasy play-throughs. Expect grandiose vocal epics and the occasional playful bard-like acoustic adventure.</description>
+        <sounds>
+            <li>ME_Medieval_Scenario_Begin</li>
+            <li>ME_Medieval_Quest_Complete</li>
+            <li>ME_Medieval_Invasion_Alert</li>
+        </sounds>
+        <tracks>
+            <li>ME_MedievalFantasy_ARareSilence</li>
+            <li>ME_MedievalFantasy_Acients</li>
+            <li>ME_MedievalFantasy_Credits</li>
+            <li>ME_MedievalFantasy_Crystals</li>
+            <li>ME_MedievalFantasy_DiamondGestalt</li>
+            <li>ME_MedievalFantasy_Diamonds</li>
+            <li>ME_MedievalFantasy_FarFarFromHome</li>
+            <li>ME_MedievalFantasy_ForTheKing</li>
+            <li>ME_MedievalFantasy_ForeverHills</li>
+            <li>ME_MedievalFantasy_HandMeMyBow</li>
+            <li>ME_MedievalFantasy_LargeBattle</li>
+            <li>ME_MedievalFantasy_LegendaryBattle</li>
+            <li>ME_MedievalFantasy_LoveNLoss</li>
+            <li>ME_MedievalFantasy_Madness</li>
+            <li>ME_MedievalFantasy_MediumBattle</li>
+            <li>ME_MedievalFantasy_MenuMusic</li>
+            <li>ME_MedievalFantasy_Nature</li>
+            <li>ME_MedievalFantasy_Prepare</li>
+            <li>ME_MedievalFantasy_SmallBattle</li>
+            <li>ME_MedievalFantasy_StayHome</li>
+            <li>ME_MedievalFantasy_TheCult</li>
+            <li>ME_MedievalFantasy_TheMixingPot</li>
+            <li>ME_MedievalFantasy_TravelFar</li>
+            <li>ME_MedievalFantasy_WeShouldGiveThisPlaceAName</li>
+            <!-- Secret -->
+            <li>ME_Shared_ManInBlack</li>
+            <li>ME_MedievalFantasy_EvelynsSong</li>
+            <li>ME_MedievalFantasy_LoneColonist</li>
+            <li>ME_MedievalFantasy_Snowfall</li>
+        </tracks>
+    </MusicExpanded.ThemeDef>
+</Defs>

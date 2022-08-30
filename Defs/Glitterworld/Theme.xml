@@ -1,0 +1,39 @@
+<Defs>
+    <MusicExpanded.ThemeDef>
+        <defName>ME_Glitterworld</defName>
+		<label>Music Expanded: Glitterworld</label>
+		<iconPath>UI/Icons/Glitterworld</iconPath>
+        <description>Digital music rooted in the sounds of science fiction. While the mythos of Rimworld paints Glitterworlds like a Utopia, think of this soundtrack more like Sci-fi Western... with much less Western. If you constantly use Androids, this might be the theme for you.</description>
+        <sounds>
+            <li>ME_Glitterworld_Scenario_Begin</li>
+            <li>ME_Glitterworld_Invasion_Alert</li>
+            <li>ME_Glitterworld_Quest_Complete</li>
+        </sounds>
+        <tracks>
+            <li>ME_Glitterworld_StartWithOdeum</li>
+            <li>ME_Shared_ManInBlack</li>
+            <li>ME_Glitterworld_AuroraBorealis</li>
+            <li>ME_Glitterworld_BlueRuins</li>
+            <li>ME_Glitterworld_ChromeGestalt</li>
+            <li>ME_Glitterworld_Circles</li>
+            <li>ME_Glitterworld_Credits</li>
+            <li>ME_Glitterworld_Defense</li>
+            <li>ME_Glitterworld_EverythingAnything</li>
+            <li>ME_Glitterworld_FollowMe</li>
+            <li>ME_Glitterworld_Glass</li>
+            <li>ME_Glitterworld_GreatNothing</li>
+            <li>ME_Glitterworld_HoldingHands</li>
+            <li>ME_Glitterworld_LargeBattle</li>
+            <li>ME_Glitterworld_LegendaryBattle</li>
+            <li>ME_Glitterworld_MediumBattle</li>
+            <li>ME_Glitterworld_MenuMusic</li>
+            <li>ME_Glitterworld_SilverCityRuins</li>
+            <li>ME_Glitterworld_SmallBattle</li>
+            <li>ME_Glitterworld_Society</li>
+            <li>ME_Glitterworld_SundayAtTheHydroponics</li>
+            <!-- <li>ME_Glitterworld_TimeMovesSlow</li> -->
+            <li>ME_Glitterworld_Utopia</li>
+            <li>ME_Glitterworld_WeDontTakeKindly</li>
+        </tracks>
+    </MusicExpanded.ThemeDef>
+</Defs>

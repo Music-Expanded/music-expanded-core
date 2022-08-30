@@ -10,7 +10,6 @@
             <li>ME_Medieval_Invasion_Alert</li>
         </sounds>
         <tracks>
-            <li>ME_Shared_ManInBlack</li>
             <li>ME_MedievalFantasy_ARareSilence</li>
             <li>ME_MedievalFantasy_Acients</li>
             <li>ME_MedievalFantasy_Credits</li>
@@ -35,6 +34,11 @@
             <li>ME_MedievalFantasy_TheMixingPot</li>
             <li>ME_MedievalFantasy_TravelFar</li>
             <li>ME_MedievalFantasy_WeShouldGiveThisPlaceAName</li>
+            <!-- Secret -->
+            <li>ME_Shared_ManInBlack</li>
+            <li>ME_MedievalFantasy_EvelynsSong</li>
+            <li>ME_MedievalFantasy_LoneColonist</li>
+            <li>ME_MedievalFantasy_Snowfall</li>
         </tracks>
     </MusicExpanded.ThemeDef>
 </Defs>

@@ -126,6 +126,29 @@
         <defName>ME_MedievalFantasy_WeShouldGiveThisPlaceAName</defName>
         <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - We Should Give This Place a Name</clipPath>
     </MusicExpanded.TrackDef>
+    <!-- Secret Tracks -->
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Evelyn's Song</label>
+        <defName>ME_MedievalFantasy_EvelynsSong</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - [Secret Song] Start Colony With a Pawn Named Evelyn</clipPath>
+        <cue>StartWithNamedColonist</cue>
+        <namedPawn>Evelyn</namedPawn>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Snowfall</label>
+        <defName>ME_MedievalFantasy_Snowfall</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - [Secret Song] Will Only Play for the First Snowfall</clipPath>
+        <vanillaLogic>true</vanillaLogic>
+        <allowedSeasons>
+            <li>Winter</li>
+        </allowedSeasons>
+    </MusicExpanded.TrackDef>
+    <MusicExpanded.TrackDef>
+        <label>Medieval (Fantasy) - Lone Colonist</label>
+        <defName>ME_MedievalFantasy_LoneColonist</defName>
+        <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - [Secret Song] Start With Only One Colonist</clipPath>
+        <cue>LoneColonist</cue>
+    </MusicExpanded.TrackDef>
     <!-- Secret Tracks, not yet implemented -->
     <MusicExpanded.TrackDef>
         <label>Medieval (Fantasy) - Gold Forest</label>

@@ -131,8 +131,8 @@
         <label>Medieval (Fantasy) - Evelyn's Song</label>
         <defName>ME_MedievalFantasy_EvelynsSong</defName>
         <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - [Secret Song] Start Colony With a Pawn Named Evelyn</clipPath>
-        <cue>StartWithNamedColonist</cue>
-        <namedPawn>Evelyn</namedPawn>
+        <cue>HasColonistNamed</cue>
+        <cueData>Evelyn</cueData>
     </MusicExpanded.TrackDef>
     <MusicExpanded.TrackDef>
         <label>Medieval (Fantasy) - Snowfall</label>
@@ -154,6 +154,7 @@
         <label>Medieval (Fantasy) - Gold Forest</label>
         <defName>ME_MedievalFantasy_GoldForest</defName>
         <clipPath>MusicExpanded/Medieval/[Secret] Medieval_Fantasy_Scenario_Begin_Gold_Forest</clipPath>
-        <cue>StartInGoldForest</cue>
+        <cue>Custom</cue>
+        <cueData>StartInGoldForest</cueData>
     </MusicExpanded.TrackDef>
 </Defs>

@@ -1,0 +1,40 @@
+<Patch>
+    <!-- Man In Black -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/IncidentDef[defName="StrangerInBlackJoin"]</xpath>
+        <value>
+            <li Class="MusicExpanded.ModExtension.PlayCue">
+                <cue>Custom</cue>
+                <cueData>ManInBlack</cueData>
+            </li>
+        </value>
+    </Operation>
+    <!-- Man In Black -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/IncidentDef[defName="AnimalInsanityMass"]</xpath>
+        <value>
+            <li Class="MusicExpanded.ModExtension.PlayCue">
+                <cue>Custom</cue>
+                <cueData>AnimalInsanity</cueData>
+            </li>
+        </value>
+    </Operation>
+    <!-- Space battle. -->
+	<Operation Class="PatchOperationFindMod">
+		<mods><li>Vanilla Events Expanded</li></mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations> 
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/IncidentDef[defName="SpaceBattle"]</xpath>
+					<value>
+						<li Class="MusicExpanded.ModExtension.PlayCue">
+							<cue>Custom</cue>
+							<cueData>SpaceBattle</cueData>
+						</li>
+					</value>
+				</li> 
+			</operations>
+		</match>
+	</Operation>
+</Patch>

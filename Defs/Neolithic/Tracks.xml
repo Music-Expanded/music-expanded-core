@@ -119,13 +119,15 @@
         <label>Neolithic - Animal Insanity</label>
         <defName>ME_Neolithic_AnimalInsanity</defName>
         <clipPath>MusicExpanded/Neolithic/Rim Neolithic - [Secret Song] Any Giant Predator Is Hunted or Attacked</clipPath>
-        <cue>AnimalInsanity</cue>
+        <cue>Custom</cue>
+        <cueData>AnimalInsanity</cueData>
     </MusicExpanded.TrackDef>
     <!-- Secret Tracks, not yet implemented -->
     <MusicExpanded.TrackDef>
         <label>Neolithic - Extreme Desert Battle</label>
         <defName>ME_Neolithic_ExtremeDesertBattle</defName>
         <clipPath>MusicExpanded/Neolithic/Rim Neolithic - [Secret Song] Engage In a Battle On an Extreme Desert Tile [Loop]</clipPath>
-        <cue>ExtremeDesertBattle</cue>
+        <cue>Custom</cue>
+        <cueData>ExtremeDesertBattle</cueData>
     </MusicExpanded.TrackDef>
 </Defs>

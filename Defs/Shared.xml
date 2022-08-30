@@ -4,6 +4,7 @@
         <label>Music Expanded - Man In Black</label>
         <defName>ME_Shared_ManInBlack</defName>
         <clipPath>MusicExpanded/Music Expanded - (Secret Song) Man In Black Arrives, Any Genre</clipPath>
-        <cue>ManInBlack</cue>
+        <cue>Custom</cue>
+        <cueData>ManInBlack</cueData>
     </MusicExpanded.TrackDef>
 </Defs>

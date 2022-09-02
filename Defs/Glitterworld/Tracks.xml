@@ -132,12 +132,12 @@
         <cue>HasColonistNamed</cue>
         <cueData>Odeum</cueData>
     </MusicExpanded.TrackDef>
-    <!-- Not yet implemented -->
     <MusicExpanded.TrackDef>
         <label>Glitterworld - Betrayal</label>
         <defName>ME_Glitterworld_Betrayal</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - [Secret Song] Traitor Event, Guests Betray Hosts Event</clipPath>
-        <cue>Custom</cue>
-        <cueData>Betrayal</cueData>
+        <!-- When we implement the ability to cue on letters, we can uncomment the following. -->
+        <!-- <cue>Custom</cue>
+        <cueData>Betrayal</cueData> -->
     </MusicExpanded.TrackDef>
 </Defs>

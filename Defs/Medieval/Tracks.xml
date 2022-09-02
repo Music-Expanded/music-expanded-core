@@ -149,12 +149,9 @@
         <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - [Secret Song] Start With Only One Colonist</clipPath>
         <cue>LoneColonist</cue>
     </MusicExpanded.TrackDef>
-    <!-- Secret Tracks, not yet implemented -->
     <MusicExpanded.TrackDef>
-        <label>Medieval (Fantasy) - Gold Forest</label>
+        <label>Medieval (Fantasy) - Golden</label>
         <defName>ME_MedievalFantasy_GoldForest</defName>
         <clipPath>MusicExpanded/Medieval/[Secret] Medieval_Fantasy_Scenario_Begin_Gold_Forest</clipPath>
-        <cue>Custom</cue>
-        <cueData>StartInGoldForest</cueData>
     </MusicExpanded.TrackDef>
 </Defs>

@@ -16,6 +16,7 @@ Maybe you're going to stream a Fantasy playthrough on Twitch... you can play the
     </supportedVersions>
     <loadAfter>
         <li>musicexpanded.framework</li>
+        <li>VanillaExpanded.VEE</li>
     </loadAfter>
     <modDependencies>
         <li>

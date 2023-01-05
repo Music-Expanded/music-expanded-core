@@ -105,11 +105,11 @@
         <defName>ME_Neolithic_TheRimWorld</defName>
         <clipPath>MusicExpanded/Neolithic/Rim Neolithic - The Rimworld</clipPath>
     </MusicExpanded.TrackDef>
-    <MusicExpanded.TrackDef>
+    <!-- <MusicExpanded.TrackDef>
         <label>Neolithic - Tribal By Nature</label>
         <defName>ME_Neolithic_TribalByNature</defName>
         <clipPath>MusicExpanded/Neolithic/Rim Neolithic - Tribal By Nature</clipPath>
-    </MusicExpanded.TrackDef>
+    </MusicExpanded.TrackDef> -->
     <MusicExpanded.TrackDef>
         <label>Neolithic - Wooden Will (Feat. Jon Algar)</label>
         <defName>ME_Neolithic_WoodenWill</defName>

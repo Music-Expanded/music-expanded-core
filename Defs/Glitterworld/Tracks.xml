@@ -19,12 +19,12 @@
         <defName>ME_Glitterworld_Circles</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Circles</clipPath>
     </MusicExpanded.TrackDef>
-    <MusicExpanded.TrackDef>
+    <!-- <MusicExpanded.TrackDef>
         <label>Glitterworld - Credits</label>
         <defName>ME_Glitterworld_Credits</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Credits</clipPath>
         <cue>Credits</cue>
-    </MusicExpanded.TrackDef>
+    </MusicExpanded.TrackDef> -->
     <MusicExpanded.TrackDef>
         <label>Glitterworld - Defense</label>
         <defName>ME_Glitterworld_Defense</defName>
@@ -106,11 +106,11 @@
         <defName>ME_Glitterworld_TimeMovesSlow</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Time Moves Slow</clipPath>
     </MusicExpanded.TrackDef> -->
-    <MusicExpanded.TrackDef>
+    <!-- <MusicExpanded.TrackDef>
         <label>Glitterworld - Utopia</label>
         <defName>ME_Glitterworld_Utopia</defName>
         <clipPath>MusicExpanded/Glitterworld/Rim Glitterworld - Utopia</clipPath>
-    </MusicExpanded.TrackDef>
+    </MusicExpanded.TrackDef> -->
     <MusicExpanded.TrackDef>
         <label>Glitterworld - We Don't Take Kindly (Feat. Yi Nantiro)</label>
         <defName>ME_Glitterworld_WeDontTakeKindly</defName>

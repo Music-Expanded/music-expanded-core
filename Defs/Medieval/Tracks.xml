@@ -10,12 +10,12 @@
         <defName>ME_MedievalFantasy_Acients</defName>
         <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Acients</clipPath>
     </MusicExpanded.TrackDef>
-    <MusicExpanded.TrackDef>
+    <!-- <MusicExpanded.TrackDef>
         <label>Medieval (Fantasy) - Credits</label>
         <defName>ME_MedievalFantasy_Credits</defName>
         <clipPath>MusicExpanded/Medieval/Rim Medieval (Fantasy) - Credits</clipPath>
         <cue>Credits</cue>
-    </MusicExpanded.TrackDef>
+    </MusicExpanded.TrackDef> -->
     <MusicExpanded.TrackDef>
         <label>Medieval (Fantasy) - Crystals</label>
         <defName>ME_MedievalFantasy_Crystals</defName>

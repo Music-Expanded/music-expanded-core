@@ -25,7 +25,7 @@
                         <clipPath>MusicExpanded/Neolithic/Neolithic_Quest_Complete</clipPath>
                     </li>
                 </grains>      
-                <volumeRange>100~100</volumeRange>
+                <volumeRange>70~70</volumeRange>
             </li>
         </subSounds>
     </SoundDef>
@@ -40,7 +40,7 @@
                         <clipPath>MusicExpanded/Neolithic/Neolithic_Invasion_Alert</clipPath>
                     </li>
                 </grains>      
-                <volumeRange>100~100</volumeRange>
+                <volumeRange>50~50</volumeRange>
             </li>
         </subSounds>
     </SoundDef>
